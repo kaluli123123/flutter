@@ -205,6 +205,66 @@ void main() {
     );
   });
 
+  testWidgets('Offstage entries do not participate in focus traversal', (WidgetTester tester) async {
+    // Regression test for https://github.com/flutter/flutter/issues/114254
+    final onstageFocusNode = FocusNode(debugLabel: 'onstage');
+    addTearDown(onstageFocusNode.dispose);
+    final offstageFocusNode = FocusNode(debugLabel: 'offstage');
+    addTearDown(offstageFocusNode.dispose);
+
+    late final OverlayEntry offstageEntry;
+    addTearDown(
+      () => offstageEntry
+        ..remove()
+        ..dispose(),
+    );
+    late final OverlayEntry onstageEntry;
+    addTearDown(
+      () => onstageEntry
+        ..remove()
+        ..dispose(),
+    );
+
+    await tester.pumpWidget(
+      Directionality(
+        textDirection: TextDirection.ltr,
+        child: Overlay(
+          initialEntries: <OverlayEntry>[
+            offstageEntry = OverlayEntry(
+              maintainState: true,
+              builder: (BuildContext context) => Focus(
+                focusNode: offstageFocusNode,
+                child: const SizedBox(width: 100, height: 100),
+              ),
+            ),
+            onstageEntry = OverlayEntry(
+              opaque: true,
+              builder: (BuildContext context) => Focus(
+                focusNode: onstageFocusNode,
+                child: const SizedBox(width: 100, height: 100),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+
+    onstageFocusNode.requestFocus();
+    await tester.pump();
+    expect(onstageFocusNode.hasPrimaryFocus, isTrue);
+
+    final FocusScopeNode scope = onstageFocusNode.nearestScope!;
+    expect(scope.traversalDescendants, contains(onstageFocusNode));
+    // The offstage entry is not laid out, so it must not be traversable.
+    expect(scope.traversalDescendants, isNot(contains(offstageFocusNode)));
+
+    // This used to throw "RenderBox was not laid out" because the traversal
+    // policy asked the offstage focus node for its geometry.
+    onstageFocusNode.nextFocus();
+    await tester.pump();
+    expect(onstageFocusNode.hasPrimaryFocus, isTrue);
+  });
+
   test('of method calls getElementForInheritedWidgetOfExactType', () async {
     final context = FakeBuildContext();
     expect(context.called, isFalse);

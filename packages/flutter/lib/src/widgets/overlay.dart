@@ -23,6 +23,7 @@ import 'package:flutter/rendering.dart';
 import 'package:flutter/scheduler.dart';
 
 import 'basic.dart';
+import 'focus_traversal.dart';
 import 'framework.dart';
 import 'layout_builder.dart';
 import 'lookup_boundary.dart';
@@ -300,11 +301,13 @@ class _OverlayEntryWidget extends StatefulWidget {
     required this.entry,
     required this.overlayState,
     this.tickerEnabled = true,
+    this.canBeTraversed = true,
   });
 
   final OverlayEntry entry;
   final OverlayState overlayState;
   final bool tickerEnabled;
+  final bool canBeTraversed;
 
   @override
   _OverlayEntryWidgetState createState() => _OverlayEntryWidgetState();
@@ -419,12 +422,18 @@ class _OverlayEntryWidgetState extends State<_OverlayEntryWidget> {
   Widget build(BuildContext context) {
     return TickerMode(
       enabled: widget.tickerEnabled,
-      child: _RenderTheaterMarker(
-        theater: _theater,
-        overlayEntryWidgetState: this,
-        // Use a Builder so that the `widget.entry.builder` can have access to
-        // _RenderTheaterMarker.of
-        child: Builder(builder: widget.entry.builder),
+      // Offstage entries are not laid out by the _RenderTheater, so they must
+      // be kept out of focus traversal: the traversal policies need the
+      // geometry of every traversable node to sort them.
+      child: ExcludeFocusTraversal(
+        excluding: !widget.canBeTraversed,
+        child: _RenderTheaterMarker(
+          theater: _theater,
+          overlayEntryWidgetState: this,
+          // Use a Builder so that the `widget.entry.builder` can have access to
+          // _RenderTheaterMarker.of
+          child: Builder(builder: widget.entry.builder),
+        ),
       ),
     );
   }
@@ -905,6 +914,7 @@ class OverlayState extends State<Overlay> with TickerProviderStateMixin {
             overlayState: this,
             entry: entry,
             tickerEnabled: false,
+            canBeTraversed: false,
           ),
         );
       }
