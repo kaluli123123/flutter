@@ -440,6 +440,56 @@ void main() {
     await gesture.up();
   });
 
+  // Regression test for https://github.com/flutter/flutter/issues/110788.
+  testWidgets('select to scroll forward when the drag stays inside the scrollable', (
+    WidgetTester tester,
+  ) async {
+    final controller = ScrollController();
+    addTearDown(controller.dispose);
+    await tester.pumpWidget(
+      MaterialApp(
+        home: SelectionArea(
+          selectionControls: materialTextSelectionControls,
+          child: ListView.builder(
+            controller: controller,
+            itemCount: 100,
+            itemBuilder: (BuildContext context, int index) {
+              return Text('Item $index');
+            },
+          ),
+        ),
+      ),
+    );
+    await tester.pumpAndSettle();
+
+    final RenderParagraph paragraph0 = tester.renderObject<RenderParagraph>(
+      find.descendant(of: find.text('Item 0'), matching: find.byType(RichText)),
+    );
+    // Long press to start a touch selection.
+    final TestGesture gesture = await tester.startGesture(textOffsetToPosition(paragraph0, 2));
+    addTearDown(gesture.removePointer);
+    await tester.pump(kLongPressTimeout);
+    expect(paragraph0.selections[0], const TextSelection(baseOffset: 0, extentOffset: 4));
+    expect(controller.offset, 0.0);
+
+    // A touch pointer cannot be dragged outside of a scrollable that fills the
+    // screen, so dragging to the edge of the scrollable must auto scroll.
+    await gesture.moveTo(tester.getBottomRight(find.byType(ListView)) - const Offset(10, 1));
+    await tester.pump();
+    await tester.pump(const Duration(seconds: 1));
+    expect(controller.offset, greaterThan(0.0));
+
+    // Keeping the pointer at the edge keeps scrolling until the end is reached.
+    await tester.pumpAndSettle(const Duration(seconds: 1));
+    expect(controller.offset, 4200.0);
+    final RenderParagraph paragraph99 = tester.renderObject<RenderParagraph>(
+      find.descendant(of: find.text('Item 99'), matching: find.byType(RichText)),
+    );
+    expect(paragraph99.selections[0], const TextSelection(baseOffset: 0, extentOffset: 7));
+
+    await gesture.up();
+  });
+
   testWidgets('select to scroll works for small scrollable', (WidgetTester tester) async {
     final controller = ScrollController();
     addTearDown(controller.dispose);
@@ -952,10 +1002,10 @@ void main() {
 
     // Release handle should stop scrolling.
     await gesture.up();
-    // Last scheduled scroll.
-    await tester.pump();
-    await tester.pump(const Duration(seconds: 1));
+    // Run the scrolls that were already scheduled when the handle was released.
+    await tester.pumpAndSettle();
     previousOffset = controller.offset;
+    await tester.pump(const Duration(seconds: 1));
     await tester.pumpAndSettle();
     expect(controller.offset, previousOffset);
   });
@@ -1013,10 +1063,10 @@ void main() {
 
     // Release handle should stop scrolling.
     await gesture.up();
-    // Last scheduled scroll.
-    await tester.pump();
-    await tester.pump(const Duration(seconds: 1));
+    // Run the scrolls that were already scheduled when the handle was released.
+    await tester.pumpAndSettle();
     previousOffset = controller.offset;
+    await tester.pump(const Duration(seconds: 1));
     await tester.pumpAndSettle();
     expect(controller.offset, previousOffset);
   });

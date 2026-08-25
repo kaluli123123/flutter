@@ -1024,7 +1024,13 @@ class SelectableRegionState extends State<SelectableRegion>
   }
 
   void _handleTouchLongPressMoveUpdate(LongPressMoveUpdateDetails details) {
-    _selectEndTo(offset: details.globalPosition, textGranularity: TextGranularity.word);
+    // The update is continuous so an ancestor scrollable keeps auto scrolling
+    // while the pointer is held near its edge.
+    _selectEndTo(
+      offset: details.globalPosition,
+      continuous: true,
+      textGranularity: TextGranularity.word,
+    );
     _selectionStatusNotifier.value = SelectableRegionSelectionStatus.changing;
     _updateSelectedContentIfNeeded();
   }

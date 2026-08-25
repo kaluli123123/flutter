@@ -1181,6 +1181,16 @@ class _ScrollableSelectionContainerDelegate extends MultiSelectableSelectionCont
   // Pointer drag is a single point, it should not have a size.
   static const double _kDefaultDragTargetSize = 0;
 
+  // The distance from the leading or trailing edge of the scrollable within
+  // which a selection drag starts an auto scroll.
+  //
+  // A selection drag is a single point, so without this threshold the drag
+  // would have to move past the edge of the scrollable before the scrollable
+  // starts to auto scroll. That is impossible on a touch device when the
+  // scrollable fills the screen, which makes content that is taller than the
+  // viewport impossible to select in full.
+  static const double _kDefaultSelectToScrollEdgeThreshold = 24;
+
   // An eye-balled value for a smooth scrolling speed.
   static const double _kDefaultSelectToScrollVelocityScalar = 30;
 
@@ -1506,11 +1516,23 @@ class _ScrollableSelectionContainerDelegate extends MultiSelectableSelectionCont
   }
 
   Rect _dragTargetFromEvent(SelectionEdgeUpdateEvent event) {
-    return Rect.fromCenter(
-      center: event.globalPosition,
-      width: _kDefaultDragTargetSize,
-      height: _kDefaultDragTargetSize,
-    );
+    // The drag target is inflated along the scroll axis so that the auto
+    // scroller kicks in while the drag is still within the viewport. The
+    // inflation is clamped to the viewport extent because a drag target that is
+    // larger than the scrollable would bounce between both edges.
+    final box = state.context.findRenderObject()! as RenderBox;
+    return switch (axisDirectionToAxis(state.axisDirection)) {
+      Axis.vertical => Rect.fromCenter(
+        center: event.globalPosition,
+        width: _kDefaultDragTargetSize,
+        height: math.min(_kDefaultSelectToScrollEdgeThreshold * 2, box.size.height),
+      ),
+      Axis.horizontal => Rect.fromCenter(
+        center: event.globalPosition,
+        width: math.min(_kDefaultSelectToScrollEdgeThreshold * 2, box.size.width),
+        height: _kDefaultDragTargetSize,
+      ),
+    };
   }
 
   @override
