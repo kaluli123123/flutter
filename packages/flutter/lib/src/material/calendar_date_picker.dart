@@ -867,6 +867,11 @@ class _MonthPickerState extends State<_MonthPicker> {
   }
 
   bool _isSelectable(DateTime date) {
+    // Days outside of the allowed range are disabled, so they cannot be
+    // focused or selected.
+    if (date.isBefore(widget.firstDate) || date.isAfter(widget.lastDate)) {
+      return false;
+    }
     return widget.selectableDayPredicate?.call(date) ?? true;
   }
 

@@ -851,6 +851,37 @@ void main() {
         expect(selectedDate, DateTime(2016, DateTime.january, 18));
       });
 
+      // Regression test for https://github.com/flutter/flutter/issues/121602.
+      testWidgets('Grid focus skips days outside of the date range', (WidgetTester tester) async {
+        DateTime? selectedDate;
+        await tester.pumpWidget(
+          calendarDatePicker(
+            currentDate: DateTime(2016, DateTime.january, 3),
+            firstDate: DateTime(2016, DateTime.january, 15),
+            onDateChanged: (DateTime date) => selectedDate = date,
+          ),
+        );
+
+        // Navigate to the grid. The previous month button is disabled, because
+        // January 2016 is the first month that can be displayed.
+        await tester.sendKeyEvent(LogicalKeyboardKey.tab);
+        await tester.sendKeyEvent(LogicalKeyboardKey.tab);
+        await tester.sendKeyEvent(LogicalKeyboardKey.tab);
+        await tester.pumpAndSettle();
+
+        // Jan 3 is before firstDate, so the first selectable day of the month
+        // should be focused instead.
+        expect(primaryFocus?.debugLabel, 'Day 15');
+
+        // Navigate from Jan 15 to Jan 16 and select it.
+        await tester.sendKeyEvent(LogicalKeyboardKey.arrowRight);
+        await tester.pumpAndSettle();
+        await tester.sendKeyEvent(LogicalKeyboardKey.space);
+        await tester.pumpAndSettle();
+
+        expect(selectedDate, DateTime(2016, DateTime.january, 16));
+      });
+
       testWidgets('Navigating with arrow keys scrolls months', (WidgetTester tester) async {
         DateTime? selectedDate;
         await tester.pumpWidget(
