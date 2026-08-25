@@ -792,6 +792,51 @@ void main() {
     skip: kIsWeb, // https://github.com/flutter/flutter/issues/87442
   );
 
+  test(
+    'evicting an image by lowering maximumSizeBytes schedules a frame to release it',
+    () async {
+      final ui.Image testImage = await createTestImage(width: 8, height: 8, cache: false);
+      const int testImageSizeBytes = 8 * 8 * 4;
+      expect(testImage.debugGetOpenHandleStackTraces()!.length, 1);
+
+      late ImageInfo imageInfo;
+      final listener = ImageStreamListener((ImageInfo info, bool syncCall) {
+        imageInfo = info;
+      });
+      final completer = TestImageStreamCompleter();
+      completer.addListener(listener);
+      imageCache.putIfAbsent(1, () => completer);
+      completer.testSetImage(testImage);
+      completer.removeListener(listener);
+
+      expect(imageCache.currentSizeBytes, testImageSizeBytes);
+
+      // Drain the frame that resolving the image scheduled so that the image
+      // cache is the only thing that can schedule the next one.
+      SchedulerBinding.instance.scheduleFrame();
+      await SchedulerBinding.instance.endOfFrame;
+      expect(SchedulerBinding.instance.hasScheduledFrame, isFalse);
+
+      imageCache.maximumSizeBytes = testImageSizeBytes - 1;
+      expect(imageCache.currentSizeBytes, 0);
+
+      // The cache releases the handles it holds in a post frame callback, so it
+      // must make sure that a frame is actually coming, otherwise the memory is
+      // never reclaimed while the application is idle.
+      expect(SchedulerBinding.instance.hasScheduledFrame, isTrue);
+
+      await SchedulerBinding.instance.endOfFrame;
+
+      // -1 _CachedImage
+      // -1 ImageStreamCompleter
+      expect(testImage.debugGetOpenHandleStackTraces()!.length, 1);
+
+      imageInfo.dispose();
+      expect(testImage.debugGetOpenHandleStackTraces()!.length, 0);
+    },
+    skip: kIsWeb, // https://github.com/flutter/flutter/issues/87442
+  );
+
   test('clear does not leave pending images stuck', () async {
     final ui.Image testImage = await createTestImage(width: 8, height: 8);
 

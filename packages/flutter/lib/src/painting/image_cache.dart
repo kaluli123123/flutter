@@ -609,6 +609,12 @@ abstract class _CachedImageBase {
       handle?.dispose();
       handle = null;
     }, debugLabel: 'CachedImage.disposeHandle');
+    // Post frame callbacks only run if a frame is actually produced, so make
+    // sure one is coming. Without this, trimming the cache while the
+    // application is idle (e.g. by lowering maximumSizeBytes or by calling
+    // evict) would not release the image memory until something else happens
+    // to schedule a frame.
+    SchedulerBinding.instance.ensureVisualUpdate();
   }
 }
 

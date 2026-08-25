@@ -2460,11 +2460,8 @@ void main() {
       isSync = syncCall;
     });
 
-    // Still have live ref because frame has not pumped yet.
-    await tester.pump();
-    expect(imageCache.liveImageCount, 1);
-
-    SchedulerBinding.instance.scheduleFrame();
+    // The cache releases the handle it holds in a post frame callback, and it
+    // schedules the frame itself, so pumping once is enough.
     await tester.pump();
     // Live ref should be gone - we didn't listen to the stream.
     expect(imageCache.liveImageCount, 0);
