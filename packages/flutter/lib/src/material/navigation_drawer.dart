@@ -326,7 +326,7 @@ class NavigationDrawerDestination extends StatelessWidget {
 /// animation value of 0 is unselected and 1 is selected.
 ///
 /// See [NavigationDestination] for an example.
-class _NavigationDestinationBuilder extends StatelessWidget {
+class _NavigationDestinationBuilder extends StatefulWidget {
   /// Builds a destination (icon + label) to use in a Material 3 [NavigationDrawer].
   const _NavigationDestinationBuilder({
     required this.buildIcon,
@@ -367,14 +367,41 @@ class _NavigationDestinationBuilder extends StatelessWidget {
   final Color? backgroundColor;
 
   @override
+  State<_NavigationDestinationBuilder> createState() => _NavigationDestinationBuilderState();
+}
+
+class _NavigationDestinationBuilderState extends State<_NavigationDestinationBuilder> {
+  final FocusNode _focusNode = FocusNode();
+
+  @override
+  void dispose() {
+    _focusNode.dispose();
+    super.dispose();
+  }
+
+  void _handleTap(VoidCallback onTap) {
+    // If a destination is already focused, the user is navigating the drawer
+    // with the keyboard. Move the focus to the destination that was just
+    // activated so that the next tab or arrow key press continues from it.
+    // The focus is never taken away from widgets outside of the destinations.
+    final BuildContext? focusedContext = FocusManager.instance.primaryFocus?.context;
+    if (focusedContext != null &&
+        focusedContext.getInheritedWidgetOfExactType<_NavigationDrawerDestinationInfo>() != null) {
+      _focusNode.requestFocus();
+    }
+    onTap();
+  }
+
+  @override
   Widget build(BuildContext context) {
     final _NavigationDrawerDestinationInfo info = _NavigationDrawerDestinationInfo.of(context);
     final NavigationDrawerThemeData navigationDrawerTheme = NavigationDrawerTheme.of(context);
     final NavigationDrawerThemeData defaults = _NavigationDrawerDefaultsM3(context);
 
     final inkWell = InkWell(
+      focusNode: _focusNode,
       highlightColor: Colors.transparent,
-      onTap: enabled ? info.onTap : null,
+      onTap: widget.enabled ? () => _handleTap(info.onTap) : null,
       customBorder:
           info.indicatorShape ?? navigationDrawerTheme.indicatorShape ?? defaults.indicatorShape!,
       child: Stack(
@@ -396,9 +423,9 @@ class _NavigationDestinationBuilder extends StatelessWidget {
           Row(
             children: <Widget>[
               const SizedBox(width: 16),
-              buildIcon(context),
+              widget.buildIcon(context),
               const SizedBox(width: 12),
-              buildLabel(context),
+              widget.buildLabel(context),
             ],
           ),
         ],
@@ -415,8 +442,8 @@ class _NavigationDestinationBuilder extends StatelessWidget {
       ),
     );
 
-    if (backgroundColor != null) {
-      return Ink(color: backgroundColor, child: destination);
+    if (widget.backgroundColor != null) {
+      return Ink(color: widget.backgroundColor, child: destination);
     }
     return destination;
   }

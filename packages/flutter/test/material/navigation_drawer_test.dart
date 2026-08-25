@@ -3,6 +3,7 @@
 // found in the LICENSE file.
 
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {
@@ -591,6 +592,120 @@ void main() {
       expect(inkMaterialRect.bottom, equals(footerRect.top));
     },
   );
+
+  testWidgets('Navigation drawer destination gains focus when tapped during keyboard navigation', (
+    WidgetTester tester,
+  ) async {
+    // Regression test for https://github.com/flutter/flutter/issues/120169
+    var selectedIndex = 0;
+    await tester.pumpWidget(
+      MaterialApp(
+        home: StatefulBuilder(
+          builder: (BuildContext context, StateSetter setState) {
+            return Scaffold(
+              body: NavigationDrawer(
+                selectedIndex: selectedIndex,
+                onDestinationSelected: (int index) => setState(() => selectedIndex = index),
+                children: const <Widget>[
+                  NavigationDrawerDestination(icon: Icon(Icons.ac_unit), label: Text('AC')),
+                  NavigationDrawerDestination(icon: Icon(Icons.access_alarm), label: Text('Alarm')),
+                  NavigationDrawerDestination(icon: Icon(Icons.access_time), label: Text('Time')),
+                ],
+              ),
+            );
+          },
+        ),
+      ),
+    );
+    await tester.pumpAndSettle();
+
+    // Move the focus to the first destination with the keyboard.
+    await tester.sendKeyEvent(LogicalKeyboardKey.tab);
+    await tester.pumpAndSettle();
+    expect(_isDestinationFocused(tester, 'AC'), isTrue);
+
+    // Selecting another destination with a pointer moves the focus to it, so
+    // that further keyboard navigation continues from the selected destination.
+    await tester.tap(find.text('Time'));
+    await tester.pumpAndSettle();
+    expect(selectedIndex, 2);
+    expect(_isDestinationFocused(tester, 'AC'), isFalse);
+    expect(_isDestinationFocused(tester, 'Time'), isTrue);
+  });
+
+  testWidgets('Navigation drawer destination does not steal the focus when tapped', (
+    WidgetTester tester,
+  ) async {
+    // Regression test for https://github.com/flutter/flutter/issues/120169
+    final buttonFocusNode = FocusNode();
+    addTearDown(buttonFocusNode.dispose);
+    var selectedIndex = 0;
+    await tester.pumpWidget(
+      MaterialApp(
+        home: StatefulBuilder(
+          builder: (BuildContext context, StateSetter setState) {
+            return Scaffold(
+              body: Row(
+                children: <Widget>[
+                  NavigationDrawer(
+                    selectedIndex: selectedIndex,
+                    onDestinationSelected: (int index) => setState(() => selectedIndex = index),
+                    children: const <Widget>[
+                      NavigationDrawerDestination(icon: Icon(Icons.ac_unit), label: Text('AC')),
+                      NavigationDrawerDestination(
+                        icon: Icon(Icons.access_alarm),
+                        label: Text('Alarm'),
+                      ),
+                      NavigationDrawerDestination(
+                        icon: Icon(Icons.access_time),
+                        label: Text('Time'),
+                      ),
+                    ],
+                  ),
+                  Expanded(
+                    child: Center(
+                      child: TextButton(
+                        focusNode: buttonFocusNode,
+                        onPressed: () {},
+                        child: const Text('Button'),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            );
+          },
+        ),
+      ),
+    );
+    await tester.pumpAndSettle();
+
+    buttonFocusNode.requestFocus();
+    await tester.pumpAndSettle();
+    expect(buttonFocusNode.hasPrimaryFocus, isTrue);
+
+    await tester.tap(find.text('Time'));
+    await tester.pumpAndSettle();
+    expect(selectedIndex, 2);
+    // The focus is outside of the drawer destinations, so it must not move.
+    expect(buttonFocusNode.hasPrimaryFocus, isTrue);
+    expect(_isDestinationFocused(tester, 'Time'), isFalse);
+  });
+}
+
+// Whether the destination with the given [label] currently holds the primary focus.
+bool _isDestinationFocused(WidgetTester tester, String label) {
+  final BuildContext? focusedContext = FocusManager.instance.primaryFocus?.context;
+  if (focusedContext == null) {
+    return false;
+  }
+  return find
+      .descendant(
+        of: find.ancestor(of: find.text(label), matching: find.byType(InkWell)).first,
+        matching: find.byElementPredicate((Element element) => element == focusedContext),
+      )
+      .evaluate()
+      .isNotEmpty;
 }
 
 Widget _buildWidget(GlobalKey<ScaffoldState> scaffoldKey, Widget child, {bool? useMaterial3}) {
