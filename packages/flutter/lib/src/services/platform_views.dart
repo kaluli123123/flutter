@@ -627,7 +627,14 @@ class _AndroidMotionEventConverter {
   }
 
   AndroidMotionEvent? toAndroidMotionEvent(PointerEvent event) {
-    final List<int> pointers = pointerPositions.keys.toList();
+    // Android reports the pointers of a MotionEvent ordered by their pointer
+    // id, and the Android views that receive the events rely on that ordering.
+    // The insertion order of `pointerPositions` only matches it as long as no
+    // Android pointer id has been recycled, which happens as soon as a finger
+    // is lifted while other fingers keep touching the screen.
+    // See https://github.com/flutter/flutter/issues/96640
+    final List<int> pointers = pointerPositions.keys.toList()
+      ..sort((int a, int b) => pointerProperties[a]!.id.compareTo(pointerProperties[b]!.id));
     final int pointerIdx = pointers.indexOf(event.pointer);
     final int numPointers = pointers.length;
 

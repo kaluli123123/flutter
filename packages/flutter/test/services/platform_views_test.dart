@@ -496,6 +496,165 @@ void main() {
       final moveArgs = moveCalls.single.arguments as List<dynamic>;
       expect(moveArgs[kAndroidMotionEventListIndexPointerCount], equals(pointerCount));
     });
+
+    testWidgets('motion event converter orders pointers by Android pointer id', (
+      WidgetTester tester,
+    ) async {
+      final log = <MethodCall>[];
+      tester.binding.defaultBinaryMessenger.setMockMethodCallHandler(
+        SystemChannels.platform_views,
+        (MethodCall methodCall) async {
+          log.add(methodCall);
+          return null;
+        },
+      );
+
+      final AndroidViewController viewController = PlatformViewsService.initSurfaceAndroidView(
+        id: 7,
+        viewType: 'web',
+        layoutDirection: TextDirection.ltr,
+      );
+      viewController.pointTransformer = (Offset offset) => offset;
+
+      // Pointer event platform data constants from _AndroidMotionEventConverter.
+      const kPointerDataFlagBatched = 1;
+      const kPointerDataFlagMultiple = 2;
+
+      // Indexes in the list returned by AndroidMotionEvent._asList.
+      const kAndroidMotionEventListIndexAction = 3;
+      const kAndroidMotionEventListIndexPointerProperties = 5;
+      const kAndroidMotionEventListIndexPointerCoords = 6;
+
+      // Indexes in the list returned by AndroidPointerCoords._asList.
+      const kAndroidPointerCoordsListIndexX = 7;
+      const kAndroidPointerCoordsListIndexY = 8;
+
+      List<dynamic> lastTouchArguments() {
+        expect(log.last.method, 'touch');
+        return log.last.arguments as List<dynamic>;
+      }
+
+      List<int> lastPointerIds() {
+        final properties =
+            lastTouchArguments()[kAndroidMotionEventListIndexPointerProperties] as List<dynamic>;
+        return properties.map<int>((dynamic p) => (p as List<dynamic>)[0] as int).toList();
+      }
+
+      List<Offset> lastPointerOffsets() {
+        final coords =
+            lastTouchArguments()[kAndroidMotionEventListIndexPointerCoords] as List<dynamic>;
+        return coords.map<Offset>((dynamic c) {
+          final coord = c as List<dynamic>;
+          return Offset(
+            coord[kAndroidPointerCoordsListIndexX] as double,
+            coord[kAndroidPointerCoordsListIndexY] as double,
+          );
+        }).toList();
+      }
+
+      // The first finger touches down, and is assigned the Android pointer id 0.
+      await viewController.dispatchPointerEvent(
+        const PointerDownEvent(
+          timeStamp: Duration(milliseconds: 1),
+          pointer: 1,
+          position: Offset(10, 10),
+        ),
+      );
+      // A second finger touches down, and is assigned the Android pointer id 1.
+      await viewController.dispatchPointerEvent(
+        const PointerDownEvent(
+          timeStamp: Duration(milliseconds: 2),
+          pointer: 2,
+          position: Offset(10, 100),
+        ),
+      );
+      expect(lastPointerIds(), <int>[0, 1]);
+
+      // The first finger is lifted, which frees the Android pointer id 0.
+      await viewController.dispatchPointerEvent(
+        const PointerMoveEvent(
+          timeStamp: Duration(milliseconds: 3),
+          pointer: 2,
+          position: Offset(10, 100),
+          platformData: kPointerDataFlagBatched,
+        ),
+      );
+      await viewController.dispatchPointerEvent(
+        const PointerUpEvent(
+          timeStamp: Duration(milliseconds: 3),
+          pointer: 1,
+          position: Offset(10, 10),
+        ),
+      );
+      expect(
+        lastTouchArguments()[kAndroidMotionEventListIndexAction],
+        AndroidViewController.pointerAction(0, AndroidViewController.kActionPointerUp),
+      );
+
+      // The first finger touches down again while the second finger is still
+      // down. It recycles the Android pointer id 0, so it must be reported
+      // before the pointer that holds the Android pointer id 1.
+      await viewController.dispatchPointerEvent(
+        const PointerDownEvent(
+          timeStamp: Duration(milliseconds: 4),
+          pointer: 3,
+          position: Offset(20, 20),
+        ),
+      );
+      expect(lastPointerIds(), <int>[0, 1]);
+      expect(lastPointerOffsets(), const <Offset>[Offset(20, 20), Offset(10, 100)]);
+      expect(
+        lastTouchArguments()[kAndroidMotionEventListIndexAction],
+        AndroidViewController.pointerAction(0, AndroidViewController.kActionPointerDown),
+      );
+
+      // Both fingers move. The engine reports the pointers of a single Android
+      // move event ordered by their Android pointer id, and the converter must
+      // only forward the batch once every pointer position has been updated.
+      log.clear();
+      await viewController.dispatchPointerEvent(
+        const PointerMoveEvent(
+          timeStamp: Duration(milliseconds: 5),
+          pointer: 3,
+          position: Offset(30, 30),
+          platformData: kPointerDataFlagMultiple | (2 << 8),
+        ),
+      );
+      await viewController.dispatchPointerEvent(
+        const PointerMoveEvent(
+          timeStamp: Duration(milliseconds: 5),
+          pointer: 2,
+          position: Offset(30, 300),
+          platformData: kPointerDataFlagMultiple | (2 << 8),
+        ),
+      );
+      expect(log.length, 1);
+      expect(lastTouchArguments()[kAndroidMotionEventListIndexAction], AndroidViewController.kActionMove);
+      expect(lastPointerIds(), <int>[0, 1]);
+      expect(lastPointerOffsets(), const <Offset>[Offset(30, 30), Offset(30, 300)]);
+
+      // The first finger is lifted again.
+      await viewController.dispatchPointerEvent(
+        const PointerMoveEvent(
+          timeStamp: Duration(milliseconds: 6),
+          pointer: 2,
+          position: Offset(30, 300),
+          platformData: kPointerDataFlagBatched,
+        ),
+      );
+      await viewController.dispatchPointerEvent(
+        const PointerUpEvent(
+          timeStamp: Duration(milliseconds: 6),
+          pointer: 3,
+          position: Offset(30, 30),
+        ),
+      );
+      expect(lastPointerIds(), <int>[0, 1]);
+      expect(
+        lastTouchArguments()[kAndroidMotionEventListIndexAction],
+        AndroidViewController.pointerAction(0, AndroidViewController.kActionPointerUp),
+      );
+    });
   });
 
   group('iOS', () {
