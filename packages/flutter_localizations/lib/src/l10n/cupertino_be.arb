@@ -45,5 +45,12 @@
   "expansionTileExpandedTapHint": "Згарнуць",
   "expansionTileCollapsedTapHint": "Разгарніце, каб даведацца больш",
   "expandedHint": "Згорнута",
-  "collapsedHint": "Разгорнута"
+  "collapsedHint": "Разгорнута",
+  "datePickerDateLabel": "Date",
+  "datePickerHourLabel": "Hour",
+  "datePickerMinuteLabel": "Minute",
+  "datePickerMeridiemLabel": "AM/PM",
+  "datePickerDayLabel": "Day",
+  "datePickerMonthLabel": "Month",
+  "datePickerYearLabel": "Year"
 }

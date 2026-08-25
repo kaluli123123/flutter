@@ -243,5 +243,40 @@
   "collapsedHint": "Expanded",
   "@collapsedHint": {
     "description": "The verb which describes the CupertinoExpansionTile state when a collapsed CupertinoExpansionTile is pressed."
+  },
+
+  "datePickerDateLabel": "Date",
+  "@datePickerDateLabel": {
+    "description": "The accessibility label for the date column of a CupertinoDatePicker in CupertinoDatePickerMode.dateAndTime mode. It is read out by screen readers such as VoiceOver and shown by iOS Voice Control to identify the column."
+  },
+
+  "datePickerHourLabel": "Hour",
+  "@datePickerHourLabel": {
+    "description": "The accessibility label for the hour column of a CupertinoDatePicker. It is read out by screen readers such as VoiceOver and shown by iOS Voice Control to identify the column."
+  },
+
+  "datePickerMinuteLabel": "Minute",
+  "@datePickerMinuteLabel": {
+    "description": "The accessibility label for the minute column of a CupertinoDatePicker. It is read out by screen readers such as VoiceOver and shown by iOS Voice Control to identify the column."
+  },
+
+  "datePickerMeridiemLabel": "AM/PM",
+  "@datePickerMeridiemLabel": {
+    "description": "The accessibility label for the column of a CupertinoDatePicker that selects between ante meridiem (AM) and post meridiem (PM). It is read out by screen readers such as VoiceOver and shown by iOS Voice Control to identify the column."
+  },
+
+  "datePickerDayLabel": "Day",
+  "@datePickerDayLabel": {
+    "description": "The accessibility label for the day of the month column of a CupertinoDatePicker. It is read out by screen readers such as VoiceOver and shown by iOS Voice Control to identify the column."
+  },
+
+  "datePickerMonthLabel": "Month",
+  "@datePickerMonthLabel": {
+    "description": "The accessibility label for the month column of a CupertinoDatePicker. It is read out by screen readers such as VoiceOver and shown by iOS Voice Control to identify the column."
+  },
+
+  "datePickerYearLabel": "Year",
+  "@datePickerYearLabel": {
+    "description": "The accessibility label for the year column of a CupertinoDatePicker. It is read out by screen readers such as VoiceOver and shown by iOS Voice Control to identify the column."
   }
 }

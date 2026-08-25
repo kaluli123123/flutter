@@ -168,6 +168,56 @@ abstract class CupertinoLocalizations {
   // The global version uses the translated string from the arb file.
   DatePickerDateTimeOrder get datePickerDateTimeOrder;
 
+  /// The accessibility label for the date column of a [CupertinoDatePicker] in
+  /// [CupertinoDatePickerMode.dateAndTime] mode.
+  ///
+  /// Defaults to the US English label. Implementations that do not override
+  /// this getter fall back to the default value.
+  // The global version uses the translated string from the arb file.
+  String get datePickerDateLabel => 'Date';
+
+  /// The accessibility label for the hour column of a [CupertinoDatePicker].
+  ///
+  /// Defaults to the US English label. Implementations that do not override
+  /// this getter fall back to the default value.
+  // The global version uses the translated string from the arb file.
+  String get datePickerHourLabel => 'Hour';
+
+  /// The accessibility label for the minute column of a [CupertinoDatePicker].
+  ///
+  /// Defaults to the US English label. Implementations that do not override
+  /// this getter fall back to the default value.
+  // The global version uses the translated string from the arb file.
+  String get datePickerMinuteLabel => 'Minute';
+
+  /// The accessibility label for the AM/PM column of a [CupertinoDatePicker].
+  ///
+  /// Defaults to the US English label. Implementations that do not override
+  /// this getter fall back to the default value.
+  // The global version uses the translated string from the arb file.
+  String get datePickerMeridiemLabel => 'AM/PM';
+
+  /// The accessibility label for the day column of a [CupertinoDatePicker].
+  ///
+  /// Defaults to the US English label. Implementations that do not override
+  /// this getter fall back to the default value.
+  // The global version uses the translated string from the arb file.
+  String get datePickerDayLabel => 'Day';
+
+  /// The accessibility label for the month column of a [CupertinoDatePicker].
+  ///
+  /// Defaults to the US English label. Implementations that do not override
+  /// this getter fall back to the default value.
+  // The global version uses the translated string from the arb file.
+  String get datePickerMonthLabel => 'Month';
+
+  /// The accessibility label for the year column of a [CupertinoDatePicker].
+  ///
+  /// Defaults to the US English label. Implementations that do not override
+  /// this getter fall back to the default value.
+  // The global version uses the translated string from the arb file.
+  String get datePickerYearLabel => 'Year';
+
   /// The abbreviation for ante meridiem (before noon) shown in the time picker.
   // The global version uses the translated string from the arb file.
   String get anteMeridiemAbbreviation;
@@ -469,6 +519,27 @@ class DefaultCupertinoLocalizations implements CupertinoLocalizations {
   @override
   DatePickerDateTimeOrder get datePickerDateTimeOrder =>
       DatePickerDateTimeOrder.date_time_dayPeriod;
+
+  @override
+  String get datePickerDateLabel => 'Date';
+
+  @override
+  String get datePickerHourLabel => 'Hour';
+
+  @override
+  String get datePickerMinuteLabel => 'Minute';
+
+  @override
+  String get datePickerMeridiemLabel => 'AM/PM';
+
+  @override
+  String get datePickerDayLabel => 'Day';
+
+  @override
+  String get datePickerMonthLabel => 'Month';
+
+  @override
+  String get datePickerYearLabel => 'Year';
 
   @override
   String get anteMeridiemAbbreviation => 'AM';

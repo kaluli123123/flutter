@@ -35,5 +35,12 @@
   "expansionTileExpandedTapHint": "ჩაკეცვა",
   "expansionTileCollapsedTapHint": "მეტი დეტალებისთვის გააფართოეთ",
   "expandedHint": "ჩაკეცილია",
-  "collapsedHint": "გაფართოებულია"
+  "collapsedHint": "გაფართოებულია",
+  "datePickerDateLabel": "Date",
+  "datePickerHourLabel": "Hour",
+  "datePickerMinuteLabel": "Minute",
+  "datePickerMeridiemLabel": "AM/PM",
+  "datePickerDayLabel": "Day",
+  "datePickerMonthLabel": "Month",
+  "datePickerYearLabel": "Year"
 }

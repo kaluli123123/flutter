@@ -35,5 +35,12 @@
   "expansionTileExpandedTapHint": "Összecsukás",
   "expansionTileCollapsedTapHint": "Bontsa ki a további részletek megtekintéséhez",
   "expandedHint": "Összecsukva",
-  "collapsedHint": "Kibontva"
+  "collapsedHint": "Kibontva",
+  "datePickerDateLabel": "Date",
+  "datePickerHourLabel": "Hour",
+  "datePickerMinuteLabel": "Minute",
+  "datePickerMeridiemLabel": "AM/PM",
+  "datePickerDayLabel": "Day",
+  "datePickerMonthLabel": "Month",
+  "datePickerYearLabel": "Year"
 }

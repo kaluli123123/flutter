@@ -35,5 +35,12 @@
   "expansionTileExpandedTapHint": "Samenvouwen",
   "expansionTileCollapsedTapHint": "Uitvouwen voor meer informatie",
   "expandedHint": "Samengevouwen",
-  "collapsedHint": "Uitgevouwen"
+  "collapsedHint": "Uitgevouwen",
+  "datePickerDateLabel": "Date",
+  "datePickerHourLabel": "Hour",
+  "datePickerMinuteLabel": "Minute",
+  "datePickerMeridiemLabel": "AM/PM",
+  "datePickerDayLabel": "Day",
+  "datePickerMonthLabel": "Month",
+  "datePickerYearLabel": "Year"
 }

@@ -35,5 +35,12 @@
   "expansionTileExpandedTapHint": "Свиване",
   "expansionTileCollapsedTapHint": "Разгъване за още подробности",
   "expandedHint": "Свито",
-  "collapsedHint": "Разгънато"
+  "collapsedHint": "Разгънато",
+  "datePickerDateLabel": "Date",
+  "datePickerHourLabel": "Hour",
+  "datePickerMinuteLabel": "Minute",
+  "datePickerMeridiemLabel": "AM/PM",
+  "datePickerDayLabel": "Day",
+  "datePickerMonthLabel": "Month",
+  "datePickerYearLabel": "Year"
 }

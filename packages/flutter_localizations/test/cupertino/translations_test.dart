@@ -53,6 +53,14 @@ void main() {
 
       expect(localizations.datePickerMediumDate(DateTime(2019, 3, 25)), isNotNull);
 
+      expect(localizations.datePickerDateLabel, isNotNull);
+      expect(localizations.datePickerHourLabel, isNotNull);
+      expect(localizations.datePickerMinuteLabel, isNotNull);
+      expect(localizations.datePickerMeridiemLabel, isNotNull);
+      expect(localizations.datePickerDayLabel, isNotNull);
+      expect(localizations.datePickerMonthLabel, isNotNull);
+      expect(localizations.datePickerYearLabel, isNotNull);
+
       expect(localizations.datePickerHour(0), isNotNull);
       expect(localizations.datePickerHour(1), isNotNull);
       expect(localizations.datePickerHour(2), isNotNull);

@@ -2044,6 +2044,66 @@ void main() {
     handle.dispose();
   });
 
+  // Regression test for https://github.com/flutter/flutter/issues/96735
+  testWidgets('CupertinoDatePicker columns are labeled for accessibility', (
+    WidgetTester tester,
+  ) async {
+    final SemanticsHandle handle = tester.ensureSemantics();
+
+    List<String> adjustableColumnLabels() {
+      final labels = <String>[];
+      void visit(SemanticsNode node) {
+        if (!node.isMergedIntoParent) {
+          final SemanticsData data = node.getSemanticsData();
+          if (data.hasAction(SemanticsAction.increase) ||
+              data.hasAction(SemanticsAction.decrease)) {
+            labels.add(data.label);
+          }
+        }
+        node.visitChildren((SemanticsNode child) {
+          visit(child);
+          return true;
+        });
+      }
+
+      visit(tester.binding.pipelineOwner.semanticsOwner!.rootSemanticsNode!);
+      return labels;
+    }
+
+    Future<void> pumpPicker(CupertinoDatePickerMode mode) async {
+      await tester.pumpWidget(
+        CupertinoApp(
+          home: Center(
+            child: SizedBox(
+              width: 500.0,
+              height: 400.0,
+              child: CupertinoDatePicker(
+                key: ValueKey<CupertinoDatePickerMode>(mode),
+                mode: mode,
+                onDateTimeChanged: (DateTime newDate) {},
+                initialDateTime: DateTime(2018, 6, 8, 10, 30),
+              ),
+            ),
+          ),
+        ),
+      );
+    }
+
+    await pumpPicker(CupertinoDatePickerMode.dateAndTime);
+    expect(adjustableColumnLabels(), <String>['Date', 'Hour', 'Minute', 'AM/PM']);
+
+    await pumpPicker(CupertinoDatePickerMode.time);
+    expect(adjustableColumnLabels(), <String>['Hour', 'Minute', 'AM/PM']);
+
+    await pumpPicker(CupertinoDatePickerMode.date);
+    expect(adjustableColumnLabels(), <String>['Month', 'Day', 'Year']);
+
+    await pumpPicker(CupertinoDatePickerMode.monthYear);
+    expect(adjustableColumnLabels(), <String>['Month', 'Year']);
+
+    handle.dispose();
+  });
+
   testWidgets('CupertinoDatePicker semantics excludes disabled dates', (WidgetTester tester) async {
     final SemanticsHandle handle = tester.ensureSemantics();
     debugResetSemanticsIdCounter();

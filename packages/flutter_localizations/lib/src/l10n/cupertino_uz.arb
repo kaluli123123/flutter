@@ -35,5 +35,12 @@
   "expansionTileExpandedTapHint": "Yigʻish",
   "expansionTileCollapsedTapHint": "Batafsil koʻrish uchun yoying",
   "expandedHint": "Yigʻilgan",
-  "collapsedHint": "Yoyilgan"
+  "collapsedHint": "Yoyilgan",
+  "datePickerDateLabel": "Date",
+  "datePickerHourLabel": "Hour",
+  "datePickerMinuteLabel": "Minute",
+  "datePickerMeridiemLabel": "AM/PM",
+  "datePickerDayLabel": "Day",
+  "datePickerMonthLabel": "Month",
+  "datePickerYearLabel": "Year"
 }

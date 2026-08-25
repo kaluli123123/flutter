@@ -45,5 +45,12 @@
   "expansionTileExpandedTapHint": "Sutraukti",
   "expansionTileCollapsedTapHint": "Išskleiskite, jei reikia daugiau išsamios informacijos",
   "expandedHint": "Sutraukta",
-  "collapsedHint": "Išskleista"
+  "collapsedHint": "Išskleista",
+  "datePickerDateLabel": "Date",
+  "datePickerHourLabel": "Hour",
+  "datePickerMinuteLabel": "Minute",
+  "datePickerMeridiemLabel": "AM/PM",
+  "datePickerDayLabel": "Day",
+  "datePickerMonthLabel": "Month",
+  "datePickerYearLabel": "Year"
 }

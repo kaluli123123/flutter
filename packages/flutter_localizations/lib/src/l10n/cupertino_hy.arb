@@ -35,5 +35,12 @@
   "expansionTileExpandedTapHint": "Ծալել",
   "expansionTileCollapsedTapHint": "ծավալեք՝ մանրամասները տեսնելու համար",
   "expandedHint": "Ծալված է",
-  "collapsedHint": "Ծավալված է"
+  "collapsedHint": "Ծավալված է",
+  "datePickerDateLabel": "Date",
+  "datePickerHourLabel": "Hour",
+  "datePickerMinuteLabel": "Minute",
+  "datePickerMeridiemLabel": "AM/PM",
+  "datePickerDayLabel": "Day",
+  "datePickerMonthLabel": "Month",
+  "datePickerYearLabel": "Year"
 }

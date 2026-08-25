@@ -35,5 +35,12 @@
   "expansionTileExpandedTapHint": "Ahenda",
   "expansionTileCollapsedTapHint": "Laiendage lisateabe nägemiseks",
   "expandedHint": "Ahendatud",
-  "collapsedHint": "Laiendatud"
+  "collapsedHint": "Laiendatud",
+  "datePickerDateLabel": "Date",
+  "datePickerHourLabel": "Hour",
+  "datePickerMinuteLabel": "Minute",
+  "datePickerMeridiemLabel": "AM/PM",
+  "datePickerDayLabel": "Day",
+  "datePickerMonthLabel": "Month",
+  "datePickerYearLabel": "Year"
 }

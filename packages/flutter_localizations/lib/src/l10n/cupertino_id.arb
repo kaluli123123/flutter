@@ -35,5 +35,12 @@
   "expansionTileExpandedTapHint": "Ciutkan",
   "expansionTileCollapsedTapHint": "Luaskan untuk mengetahui detail selengkapnya",
   "expandedHint": "Diciutkan",
-  "collapsedHint": "Diluaskan"
+  "collapsedHint": "Diluaskan",
+  "datePickerDateLabel": "Date",
+  "datePickerHourLabel": "Hour",
+  "datePickerMinuteLabel": "Minute",
+  "datePickerMeridiemLabel": "AM/PM",
+  "datePickerDayLabel": "Day",
+  "datePickerMonthLabel": "Month",
+  "datePickerYearLabel": "Year"
 }

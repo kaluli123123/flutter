@@ -35,5 +35,12 @@
   "expansionTileExpandedTapHint": "Хураах",
   "expansionTileCollapsedTapHint": "Илүү дэлгэрэнгүй авах бол дэлгэнэ үү",
   "expandedHint": "Хураасан",
-  "collapsedHint": "Дэлгэсэн"
+  "collapsedHint": "Дэлгэсэн",
+  "datePickerDateLabel": "Date",
+  "datePickerHourLabel": "Hour",
+  "datePickerMinuteLabel": "Minute",
+  "datePickerMeridiemLabel": "AM/PM",
+  "datePickerDayLabel": "Day",
+  "datePickerMonthLabel": "Month",
+  "datePickerYearLabel": "Year"
 }

@@ -35,5 +35,12 @@
   "expansionTileExpandedTapHint": "جمع کردن",
   "expansionTileCollapsedTapHint": "ازهم بازکردن برای جزئیات بیشتر",
   "expandedHint": "جمع‌شده",
-  "collapsedHint": "ازهم بازشده"
+  "collapsedHint": "ازهم بازشده",
+  "datePickerDateLabel": "Date",
+  "datePickerHourLabel": "Hour",
+  "datePickerMinuteLabel": "Minute",
+  "datePickerMeridiemLabel": "AM/PM",
+  "datePickerDayLabel": "Day",
+  "datePickerMonthLabel": "Month",
+  "datePickerYearLabel": "Year"
 }

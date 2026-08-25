@@ -35,5 +35,12 @@
   "expansionTileExpandedTapHint": "Goqa",
   "expansionTileCollapsedTapHint": "Nweba ukuze uthole imininingwane eyengeziwe",
   "expandedHint": "Kugoqiwe",
-  "collapsedHint": "Kunwetshiwe"
+  "collapsedHint": "Kunwetshiwe",
+  "datePickerDateLabel": "Date",
+  "datePickerHourLabel": "Hour",
+  "datePickerMinuteLabel": "Minute",
+  "datePickerMeridiemLabel": "AM/PM",
+  "datePickerDayLabel": "Day",
+  "datePickerMonthLabel": "Month",
+  "datePickerYearLabel": "Year"
 }

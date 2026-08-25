@@ -35,5 +35,12 @@
   "expansionTileExpandedTapHint": "comprimere",
   "expansionTileCollapsedTapHint": "espandere e visualizzare altri dettagli",
   "expandedHint": "Compresso",
-  "collapsedHint": "Espanso"
+  "collapsedHint": "Espanso",
+  "datePickerDateLabel": "Date",
+  "datePickerHourLabel": "Hour",
+  "datePickerMinuteLabel": "Minute",
+  "datePickerMeridiemLabel": "AM/PM",
+  "datePickerDayLabel": "Day",
+  "datePickerMonthLabel": "Month",
+  "datePickerYearLabel": "Year"
 }

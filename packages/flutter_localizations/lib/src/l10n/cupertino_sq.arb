@@ -35,5 +35,12 @@
   "expansionTileExpandedTapHint": "Palos",
   "expansionTileCollapsedTapHint": "Zgjero për më shumë detaje",
   "expandedHint": "U palos",
-  "collapsedHint": "U zgjerua"
+  "collapsedHint": "U zgjerua",
+  "datePickerDateLabel": "Date",
+  "datePickerHourLabel": "Hour",
+  "datePickerMinuteLabel": "Minute",
+  "datePickerMeridiemLabel": "AM/PM",
+  "datePickerDayLabel": "Day",
+  "datePickerMonthLabel": "Month",
+  "datePickerYearLabel": "Year"
 }

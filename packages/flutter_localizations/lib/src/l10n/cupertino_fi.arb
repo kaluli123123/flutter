@@ -35,5 +35,12 @@
   "expansionTileExpandedTapHint": "Tiivistä",
   "expansionTileCollapsedTapHint": "Katso lisätietoja laajentamalla",
   "expandedHint": "Tiivistetty",
-  "collapsedHint": "Laajennettu"
+  "collapsedHint": "Laajennettu",
+  "datePickerDateLabel": "Date",
+  "datePickerHourLabel": "Hour",
+  "datePickerMinuteLabel": "Minute",
+  "datePickerMeridiemLabel": "AM/PM",
+  "datePickerDayLabel": "Day",
+  "datePickerMonthLabel": "Month",
+  "datePickerYearLabel": "Year"
 }

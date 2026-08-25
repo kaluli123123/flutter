@@ -35,5 +35,12 @@
   "expansionTileExpandedTapHint": "ยุบ",
   "expansionTileCollapsedTapHint": "ขยายเพื่อดูรายละเอียดเพิ่มเติม",
   "expandedHint": "ยุบ",
-  "collapsedHint": "ขยาย"
+  "collapsedHint": "ขยาย",
+  "datePickerDateLabel": "Date",
+  "datePickerHourLabel": "Hour",
+  "datePickerMinuteLabel": "Minute",
+  "datePickerMeridiemLabel": "AM/PM",
+  "datePickerDayLabel": "Day",
+  "datePickerMonthLabel": "Month",
+  "datePickerYearLabel": "Year"
 }

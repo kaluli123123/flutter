@@ -40,5 +40,12 @@
   "expansionTileExpandedTapHint": "Sužavanje",
   "expansionTileCollapsedTapHint": "Proširivanje za više detalja",
   "expandedHint": "Suženo",
-  "collapsedHint": "Prošireno"
+  "collapsedHint": "Prošireno",
+  "datePickerDateLabel": "Date",
+  "datePickerHourLabel": "Hour",
+  "datePickerMinuteLabel": "Minute",
+  "datePickerMeridiemLabel": "AM/PM",
+  "datePickerDayLabel": "Day",
+  "datePickerMonthLabel": "Month",
+  "datePickerYearLabel": "Year"
 }

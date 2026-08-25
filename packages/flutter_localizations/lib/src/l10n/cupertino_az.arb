@@ -35,5 +35,12 @@
   "expansionTileExpandedTapHint": "Yığcamlaşdırın",
   "expansionTileCollapsedTapHint": "Daha çox detallar üçün genişləndirin",
   "expandedHint": "Yığcamlaşdırıldı",
-  "collapsedHint": "Genişləndirildi"
+  "collapsedHint": "Genişləndirildi",
+  "datePickerDateLabel": "Date",
+  "datePickerHourLabel": "Hour",
+  "datePickerMinuteLabel": "Minute",
+  "datePickerMeridiemLabel": "AM/PM",
+  "datePickerDayLabel": "Day",
+  "datePickerMonthLabel": "Month",
+  "datePickerYearLabel": "Year"
 }

@@ -35,5 +35,12 @@
   "expansionTileExpandedTapHint": "ሰብስብ",
   "expansionTileCollapsedTapHint": "ለተጨማሪ ዝርዝሮች ይዘርጉ",
   "expandedHint": "ተሰብስቧል",
-  "collapsedHint": "ተዘርግቷል"
+  "collapsedHint": "ተዘርግቷል",
+  "datePickerDateLabel": "Date",
+  "datePickerHourLabel": "Hour",
+  "datePickerMinuteLabel": "Minute",
+  "datePickerMeridiemLabel": "AM/PM",
+  "datePickerDayLabel": "Day",
+  "datePickerMonthLabel": "Month",
+  "datePickerYearLabel": "Year"
 }

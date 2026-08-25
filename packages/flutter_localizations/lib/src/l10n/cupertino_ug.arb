@@ -35,5 +35,12 @@
   "expansionTileExpandedTapHint": "يىغىش",
   "expansionTileCollapsedTapHint": "تېخىمۇ كۆپ تەپسىلاتلار ئۈچۈن يېيىڭ",
   "expandedHint": "يىغىلدى",
-  "collapsedHint": "يېيىلدى"
+  "collapsedHint": "يېيىلدى",
+  "datePickerDateLabel": "Date",
+  "datePickerHourLabel": "Hour",
+  "datePickerMinuteLabel": "Minute",
+  "datePickerMeridiemLabel": "AM/PM",
+  "datePickerDayLabel": "Day",
+  "datePickerMonthLabel": "Month",
+  "datePickerYearLabel": "Year"
 }

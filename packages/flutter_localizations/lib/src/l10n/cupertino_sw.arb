@@ -35,5 +35,12 @@
   "expansionTileExpandedTapHint": "Kunja",
   "expansionTileCollapsedTapHint": "Panua ili upate maelezo zaidi",
   "expandedHint": "Imekunjwa",
-  "collapsedHint": "Imepanuliwa"
+  "collapsedHint": "Imepanuliwa",
+  "datePickerDateLabel": "Date",
+  "datePickerHourLabel": "Hour",
+  "datePickerMinuteLabel": "Minute",
+  "datePickerMeridiemLabel": "AM/PM",
+  "datePickerDayLabel": "Day",
+  "datePickerMonthLabel": "Month",
+  "datePickerYearLabel": "Year"
 }

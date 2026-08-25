@@ -55,5 +55,12 @@
   "expansionTileExpandedTapHint": "تصغير",
   "expansionTileCollapsedTapHint": "وسِّع المربّع لعرض مزيد من التفاصيل.",
   "expandedHint": "مصغَّر",
-  "collapsedHint": "موسَّع"
+  "collapsedHint": "موسَّع",
+  "datePickerDateLabel": "Date",
+  "datePickerHourLabel": "Hour",
+  "datePickerMinuteLabel": "Minute",
+  "datePickerMeridiemLabel": "AM/PM",
+  "datePickerDayLabel": "Day",
+  "datePickerMonthLabel": "Month",
+  "datePickerYearLabel": "Year"
 }

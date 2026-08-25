@@ -35,5 +35,12 @@
   "expansionTileExpandedTapHint": "Minnka",
   "expansionTileCollapsedTapHint": "Stækka til að sjá frekari upplýsingar",
   "expandedHint": "Minnkað",
-  "collapsedHint": "Stækkað"
+  "collapsedHint": "Stækkað",
+  "datePickerDateLabel": "Date",
+  "datePickerHourLabel": "Hour",
+  "datePickerMinuteLabel": "Minute",
+  "datePickerMeridiemLabel": "AM/PM",
+  "datePickerDayLabel": "Day",
+  "datePickerMonthLabel": "Month",
+  "datePickerYearLabel": "Year"
 }

@@ -35,5 +35,12 @@
   "expansionTileExpandedTapHint": "ခေါက်ရန်",
   "expansionTileCollapsedTapHint": "အသေးစိတ်အတွက် ဖြန့်ရန်",
   "expandedHint": "ခေါက်ထားသည်",
-  "collapsedHint": "ဖြန့်ထားသည်"
+  "collapsedHint": "ဖြန့်ထားသည်",
+  "datePickerDateLabel": "Date",
+  "datePickerHourLabel": "Hour",
+  "datePickerMinuteLabel": "Minute",
+  "datePickerMeridiemLabel": "AM/PM",
+  "datePickerDayLabel": "Day",
+  "datePickerMonthLabel": "Month",
+  "datePickerYearLabel": "Year"
 }

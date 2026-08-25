@@ -35,5 +35,12 @@
   "expansionTileExpandedTapHint": "Minimieren",
   "expansionTileCollapsedTapHint": "Für weitere Details maximieren",
   "expandedHint": "Minimiert",
-  "collapsedHint": "Maximiert"
+  "collapsedHint": "Maximiert",
+  "datePickerDateLabel": "Date",
+  "datePickerHourLabel": "Hour",
+  "datePickerMinuteLabel": "Minute",
+  "datePickerMeridiemLabel": "AM/PM",
+  "datePickerDayLabel": "Day",
+  "datePickerMonthLabel": "Month",
+  "datePickerYearLabel": "Year"
 }

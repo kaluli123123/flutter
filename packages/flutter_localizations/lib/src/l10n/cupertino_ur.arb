@@ -35,5 +35,12 @@
   "expansionTileExpandedTapHint": "سکیڑیں",
   "expansionTileCollapsedTapHint": "مزید تفصیلات کے لیے پھیلائیں",
   "expandedHint": "سکڑا ہوا",
-  "collapsedHint": "پھیلا ہوا"
+  "collapsedHint": "پھیلا ہوا",
+  "datePickerDateLabel": "Date",
+  "datePickerHourLabel": "Hour",
+  "datePickerMinuteLabel": "Minute",
+  "datePickerMeridiemLabel": "AM/PM",
+  "datePickerDayLabel": "Day",
+  "datePickerMonthLabel": "Month",
+  "datePickerYearLabel": "Year"
 }

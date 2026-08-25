@@ -40,5 +40,12 @@
   "expansionTileExpandedTapHint": "Sakļaut",
   "expansionTileCollapsedTapHint": "Izvērst, lai iegūtu plašāku informāciju",
   "expandedHint": "Sakļauts",
-  "collapsedHint": "Izvērsts"
+  "collapsedHint": "Izvērsts",
+  "datePickerDateLabel": "Date",
+  "datePickerHourLabel": "Hour",
+  "datePickerMinuteLabel": "Minute",
+  "datePickerMeridiemLabel": "AM/PM",
+  "datePickerDayLabel": "Day",
+  "datePickerMonthLabel": "Month",
+  "datePickerYearLabel": "Year"
 }

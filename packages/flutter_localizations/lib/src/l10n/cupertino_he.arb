@@ -45,5 +45,12 @@
   "expansionTileExpandedTapHint": "כיווץ",
   "expansionTileCollapsedTapHint": "ניתן להרחיב להצגת פרטים נוספים",
   "expandedHint": "מכווץ",
-  "collapsedHint": "מורחב"
+  "collapsedHint": "מורחב",
+  "datePickerDateLabel": "Date",
+  "datePickerHourLabel": "Hour",
+  "datePickerMinuteLabel": "Minute",
+  "datePickerMeridiemLabel": "AM/PM",
+  "datePickerDayLabel": "Day",
+  "datePickerMonthLabel": "Month",
+  "datePickerYearLabel": "Year"
 }

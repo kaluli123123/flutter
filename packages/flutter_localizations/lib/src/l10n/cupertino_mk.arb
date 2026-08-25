@@ -35,5 +35,12 @@
   "expansionTileExpandedTapHint": "собирање",
   "expansionTileCollapsedTapHint": "проширување за повеќе детали",
   "expandedHint": "Собрано",
-  "collapsedHint": "Проширено"
+  "collapsedHint": "Проширено",
+  "datePickerDateLabel": "Date",
+  "datePickerHourLabel": "Hour",
+  "datePickerMinuteLabel": "Minute",
+  "datePickerMeridiemLabel": "AM/PM",
+  "datePickerDayLabel": "Day",
+  "datePickerMonthLabel": "Month",
+  "datePickerYearLabel": "Year"
 }

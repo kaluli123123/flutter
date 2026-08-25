@@ -35,5 +35,12 @@
   "expansionTileExpandedTapHint": "Tolestu",
   "expansionTileCollapsedTapHint": "Zabaldu hau xehetasun gehiago lortzeko",
   "expandedHint": "Tolestuta",
-  "collapsedHint": "Zabalduta"
+  "collapsedHint": "Zabalduta",
+  "datePickerDateLabel": "Date",
+  "datePickerHourLabel": "Hour",
+  "datePickerMinuteLabel": "Minute",
+  "datePickerMeridiemLabel": "AM/PM",
+  "datePickerDayLabel": "Day",
+  "datePickerMonthLabel": "Month",
+  "datePickerYearLabel": "Year"
 }

@@ -40,6 +40,14 @@ void main() {
     expect(localizations.cancelButtonLabel, isNotNull);
     expect(localizations.backButtonLabel, isNotNull);
 
+    expect(localizations.datePickerDateLabel, isNotNull);
+    expect(localizations.datePickerHourLabel, isNotNull);
+    expect(localizations.datePickerMinuteLabel, isNotNull);
+    expect(localizations.datePickerMeridiemLabel, isNotNull);
+    expect(localizations.datePickerDayLabel, isNotNull);
+    expect(localizations.datePickerMonthLabel, isNotNull);
+    expect(localizations.datePickerYearLabel, isNotNull);
+
     expect(localizations.expansionTileExpandedHint, isNotNull);
     expect(localizations.expansionTileCollapsedHint, isNotNull);
     expect(localizations.expansionTileExpandedTapHint, isNotNull);

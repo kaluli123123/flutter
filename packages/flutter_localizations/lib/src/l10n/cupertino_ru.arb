@@ -45,5 +45,12 @@
   "expansionTileExpandedTapHint": "Свернуть",
   "expansionTileCollapsedTapHint": "Развернуть дополнительные сведения",
   "expandedHint": "Свернуто",
-  "collapsedHint": "Развернуто"
+  "collapsedHint": "Развернуто",
+  "datePickerDateLabel": "Date",
+  "datePickerHourLabel": "Hour",
+  "datePickerMinuteLabel": "Minute",
+  "datePickerMeridiemLabel": "AM/PM",
+  "datePickerDayLabel": "Day",
+  "datePickerMonthLabel": "Month",
+  "datePickerYearLabel": "Year"
 }

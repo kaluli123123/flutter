@@ -45,5 +45,12 @@
   "expansionTileExpandedTapHint": "Zwiń",
   "expansionTileCollapsedTapHint": "Rozwiń, aby wyświetlić więcej informacji",
   "expandedHint": "Zwinięto",
-  "collapsedHint": "Rozwinięto"
+  "collapsedHint": "Rozwinięto",
+  "datePickerDateLabel": "Date",
+  "datePickerHourLabel": "Hour",
+  "datePickerMinuteLabel": "Minute",
+  "datePickerMeridiemLabel": "AM/PM",
+  "datePickerDayLabel": "Day",
+  "datePickerMonthLabel": "Month",
+  "datePickerYearLabel": "Year"
 }

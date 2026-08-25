@@ -66,10 +66,19 @@ class CupertinoLocalizationAf extends GlobalCupertinoLocalizations {
   String get cutButtonLabel => 'Knip';
 
   @override
+  String get datePickerDateLabel => 'Date';
+
+  @override
   String get datePickerDateOrderString => 'dmy';
 
   @override
   String get datePickerDateTimeOrderString => 'date_time_dayPeriod';
+
+  @override
+  String get datePickerDayLabel => 'Day';
+
+  @override
+  String get datePickerHourLabel => 'Hour';
 
   @override
   String? get datePickerHourSemanticsLabelFew => null;
@@ -90,6 +99,12 @@ class CupertinoLocalizationAf extends GlobalCupertinoLocalizations {
   String? get datePickerHourSemanticsLabelZero => null;
 
   @override
+  String get datePickerMeridiemLabel => 'AM/PM';
+
+  @override
+  String get datePickerMinuteLabel => 'Minute';
+
+  @override
   String? get datePickerMinuteSemanticsLabelFew => null;
 
   @override
@@ -106,6 +121,12 @@ class CupertinoLocalizationAf extends GlobalCupertinoLocalizations {
 
   @override
   String? get datePickerMinuteSemanticsLabelZero => null;
+
+  @override
+  String get datePickerMonthLabel => 'Month';
+
+  @override
+  String get datePickerYearLabel => 'Year';
 
   @override
   String get expandedHint => 'Ingevou';
@@ -256,10 +277,19 @@ class CupertinoLocalizationAm extends GlobalCupertinoLocalizations {
   String get cutButtonLabel => 'ቁረጥ';
 
   @override
+  String get datePickerDateLabel => 'Date';
+
+  @override
   String get datePickerDateOrderString => 'dmy';
 
   @override
   String get datePickerDateTimeOrderString => 'date_time_dayPeriod';
+
+  @override
+  String get datePickerDayLabel => 'Day';
+
+  @override
+  String get datePickerHourLabel => 'Hour';
 
   @override
   String? get datePickerHourSemanticsLabelFew => null;
@@ -280,6 +310,12 @@ class CupertinoLocalizationAm extends GlobalCupertinoLocalizations {
   String? get datePickerHourSemanticsLabelZero => null;
 
   @override
+  String get datePickerMeridiemLabel => 'AM/PM';
+
+  @override
+  String get datePickerMinuteLabel => 'Minute';
+
+  @override
   String? get datePickerMinuteSemanticsLabelFew => null;
 
   @override
@@ -296,6 +332,12 @@ class CupertinoLocalizationAm extends GlobalCupertinoLocalizations {
 
   @override
   String? get datePickerMinuteSemanticsLabelZero => null;
+
+  @override
+  String get datePickerMonthLabel => 'Month';
+
+  @override
+  String get datePickerYearLabel => 'Year';
 
   @override
   String get expandedHint => 'ተሰብስቧል';
@@ -446,10 +488,19 @@ class CupertinoLocalizationAr extends GlobalCupertinoLocalizations {
   String get cutButtonLabel => 'قص';
 
   @override
+  String get datePickerDateLabel => 'Date';
+
+  @override
   String get datePickerDateOrderString => 'dmy';
 
   @override
   String get datePickerDateTimeOrderString => 'date_time_dayPeriod';
+
+  @override
+  String get datePickerDayLabel => 'Day';
+
+  @override
+  String get datePickerHourLabel => 'Hour';
 
   @override
   String? get datePickerHourSemanticsLabelFew => r'$hour بالضبط';
@@ -470,6 +521,12 @@ class CupertinoLocalizationAr extends GlobalCupertinoLocalizations {
   String? get datePickerHourSemanticsLabelZero => r'$hour بالضبط';
 
   @override
+  String get datePickerMeridiemLabel => 'AM/PM';
+
+  @override
+  String get datePickerMinuteLabel => 'Minute';
+
+  @override
   String? get datePickerMinuteSemanticsLabelFew => r'$minute دقائق';
 
   @override
@@ -486,6 +543,12 @@ class CupertinoLocalizationAr extends GlobalCupertinoLocalizations {
 
   @override
   String? get datePickerMinuteSemanticsLabelZero => r'$minute دقيقة​';
+
+  @override
+  String get datePickerMonthLabel => 'Month';
+
+  @override
+  String get datePickerYearLabel => 'Year';
 
   @override
   String get expandedHint => 'مصغَّر';
@@ -636,10 +699,19 @@ class CupertinoLocalizationAs extends GlobalCupertinoLocalizations {
   String get cutButtonLabel => 'কাট কৰক';
 
   @override
+  String get datePickerDateLabel => 'Date';
+
+  @override
   String get datePickerDateOrderString => 'mdy';
 
   @override
   String get datePickerDateTimeOrderString => 'date_time_dayPeriod';
+
+  @override
+  String get datePickerDayLabel => 'Day';
+
+  @override
+  String get datePickerHourLabel => 'Hour';
 
   @override
   String? get datePickerHourSemanticsLabelFew => null;
@@ -660,6 +732,12 @@ class CupertinoLocalizationAs extends GlobalCupertinoLocalizations {
   String? get datePickerHourSemanticsLabelZero => null;
 
   @override
+  String get datePickerMeridiemLabel => 'AM/PM';
+
+  @override
+  String get datePickerMinuteLabel => 'Minute';
+
+  @override
   String? get datePickerMinuteSemanticsLabelFew => null;
 
   @override
@@ -676,6 +754,12 @@ class CupertinoLocalizationAs extends GlobalCupertinoLocalizations {
 
   @override
   String? get datePickerMinuteSemanticsLabelZero => null;
+
+  @override
+  String get datePickerMonthLabel => 'Month';
+
+  @override
+  String get datePickerYearLabel => 'Year';
 
   @override
   String get expandedHint => 'সংকোচন কৰা আছে';
@@ -826,10 +910,19 @@ class CupertinoLocalizationAz extends GlobalCupertinoLocalizations {
   String get cutButtonLabel => 'Kəsin';
 
   @override
+  String get datePickerDateLabel => 'Date';
+
+  @override
   String get datePickerDateOrderString => 'mdy';
 
   @override
   String get datePickerDateTimeOrderString => 'date_time_dayPeriod';
+
+  @override
+  String get datePickerDayLabel => 'Day';
+
+  @override
+  String get datePickerHourLabel => 'Hour';
 
   @override
   String? get datePickerHourSemanticsLabelFew => null;
@@ -850,6 +943,12 @@ class CupertinoLocalizationAz extends GlobalCupertinoLocalizations {
   String? get datePickerHourSemanticsLabelZero => null;
 
   @override
+  String get datePickerMeridiemLabel => 'AM/PM';
+
+  @override
+  String get datePickerMinuteLabel => 'Minute';
+
+  @override
   String? get datePickerMinuteSemanticsLabelFew => null;
 
   @override
@@ -866,6 +965,12 @@ class CupertinoLocalizationAz extends GlobalCupertinoLocalizations {
 
   @override
   String? get datePickerMinuteSemanticsLabelZero => null;
+
+  @override
+  String get datePickerMonthLabel => 'Month';
+
+  @override
+  String get datePickerYearLabel => 'Year';
 
   @override
   String get expandedHint => 'Yığcamlaşdırıldı';
@@ -1016,10 +1121,19 @@ class CupertinoLocalizationBe extends GlobalCupertinoLocalizations {
   String get cutButtonLabel => 'Выразаць';
 
   @override
+  String get datePickerDateLabel => 'Date';
+
+  @override
   String get datePickerDateOrderString => 'mdy';
 
   @override
   String get datePickerDateTimeOrderString => 'date_time_dayPeriod';
+
+  @override
+  String get datePickerDayLabel => 'Day';
+
+  @override
+  String get datePickerHourLabel => 'Hour';
 
   @override
   String? get datePickerHourSemanticsLabelFew => r'$hour гадзіны нуль хвілін';
@@ -1040,6 +1154,12 @@ class CupertinoLocalizationBe extends GlobalCupertinoLocalizations {
   String? get datePickerHourSemanticsLabelZero => null;
 
   @override
+  String get datePickerMeridiemLabel => 'AM/PM';
+
+  @override
+  String get datePickerMinuteLabel => 'Minute';
+
+  @override
   String? get datePickerMinuteSemanticsLabelFew => r'$minute хвіліны';
 
   @override
@@ -1056,6 +1176,12 @@ class CupertinoLocalizationBe extends GlobalCupertinoLocalizations {
 
   @override
   String? get datePickerMinuteSemanticsLabelZero => null;
+
+  @override
+  String get datePickerMonthLabel => 'Month';
+
+  @override
+  String get datePickerYearLabel => 'Year';
 
   @override
   String get expandedHint => 'Згорнута';
@@ -1206,10 +1332,19 @@ class CupertinoLocalizationBg extends GlobalCupertinoLocalizations {
   String get cutButtonLabel => 'Изрязване';
 
   @override
+  String get datePickerDateLabel => 'Date';
+
+  @override
   String get datePickerDateOrderString => 'dmy';
 
   @override
   String get datePickerDateTimeOrderString => 'date_time_dayPeriod';
+
+  @override
+  String get datePickerDayLabel => 'Day';
+
+  @override
+  String get datePickerHourLabel => 'Hour';
 
   @override
   String? get datePickerHourSemanticsLabelFew => null;
@@ -1230,6 +1365,12 @@ class CupertinoLocalizationBg extends GlobalCupertinoLocalizations {
   String? get datePickerHourSemanticsLabelZero => null;
 
   @override
+  String get datePickerMeridiemLabel => 'AM/PM';
+
+  @override
+  String get datePickerMinuteLabel => 'Minute';
+
+  @override
   String? get datePickerMinuteSemanticsLabelFew => null;
 
   @override
@@ -1246,6 +1387,12 @@ class CupertinoLocalizationBg extends GlobalCupertinoLocalizations {
 
   @override
   String? get datePickerMinuteSemanticsLabelZero => null;
+
+  @override
+  String get datePickerMonthLabel => 'Month';
+
+  @override
+  String get datePickerYearLabel => 'Year';
 
   @override
   String get expandedHint => 'Свито';
@@ -1396,10 +1543,19 @@ class CupertinoLocalizationBn extends GlobalCupertinoLocalizations {
   String get cutButtonLabel => 'কাট করুন';
 
   @override
+  String get datePickerDateLabel => 'Date';
+
+  @override
   String get datePickerDateOrderString => 'mdy';
 
   @override
   String get datePickerDateTimeOrderString => 'date_time_dayPeriod';
+
+  @override
+  String get datePickerDayLabel => 'Day';
+
+  @override
+  String get datePickerHourLabel => 'Hour';
 
   @override
   String? get datePickerHourSemanticsLabelFew => null;
@@ -1420,6 +1576,12 @@ class CupertinoLocalizationBn extends GlobalCupertinoLocalizations {
   String? get datePickerHourSemanticsLabelZero => null;
 
   @override
+  String get datePickerMeridiemLabel => 'AM/PM';
+
+  @override
+  String get datePickerMinuteLabel => 'Minute';
+
+  @override
   String? get datePickerMinuteSemanticsLabelFew => null;
 
   @override
@@ -1436,6 +1598,12 @@ class CupertinoLocalizationBn extends GlobalCupertinoLocalizations {
 
   @override
   String? get datePickerMinuteSemanticsLabelZero => null;
+
+  @override
+  String get datePickerMonthLabel => 'Month';
+
+  @override
+  String get datePickerYearLabel => 'Year';
 
   @override
   String get expandedHint => 'আড়াল করা হয়েছে';
@@ -1586,10 +1754,19 @@ class CupertinoLocalizationBo extends GlobalCupertinoLocalizations {
   String get cutButtonLabel => 'གཅོད།';
 
   @override
+  String get datePickerDateLabel => 'Date';
+
+  @override
   String get datePickerDateOrderString => 'ymd';
 
   @override
   String get datePickerDateTimeOrderString => 'date_time_dayPeriod';
+
+  @override
+  String get datePickerDayLabel => 'Day';
+
+  @override
+  String get datePickerHourLabel => 'Hour';
 
   @override
   String? get datePickerHourSemanticsLabelFew => null;
@@ -1610,6 +1787,12 @@ class CupertinoLocalizationBo extends GlobalCupertinoLocalizations {
   String? get datePickerHourSemanticsLabelZero => null;
 
   @override
+  String get datePickerMeridiemLabel => 'AM/PM';
+
+  @override
+  String get datePickerMinuteLabel => 'Minute';
+
+  @override
   String? get datePickerMinuteSemanticsLabelFew => null;
 
   @override
@@ -1626,6 +1809,12 @@ class CupertinoLocalizationBo extends GlobalCupertinoLocalizations {
 
   @override
   String? get datePickerMinuteSemanticsLabelZero => null;
+
+  @override
+  String get datePickerMonthLabel => 'Month';
+
+  @override
+  String get datePickerYearLabel => 'Year';
 
   @override
   String get expandedHint => 'ཕྱོགས་བསྡུས།';
@@ -1776,10 +1965,19 @@ class CupertinoLocalizationBs extends GlobalCupertinoLocalizations {
   String get cutButtonLabel => 'Izreži';
 
   @override
+  String get datePickerDateLabel => 'Date';
+
+  @override
   String get datePickerDateOrderString => 'dmy';
 
   @override
   String get datePickerDateTimeOrderString => 'date_time_dayPeriod';
+
+  @override
+  String get datePickerDayLabel => 'Day';
+
+  @override
+  String get datePickerHourLabel => 'Hour';
 
   @override
   String? get datePickerHourSemanticsLabelFew => r'$hour sata';
@@ -1800,6 +1998,12 @@ class CupertinoLocalizationBs extends GlobalCupertinoLocalizations {
   String? get datePickerHourSemanticsLabelZero => null;
 
   @override
+  String get datePickerMeridiemLabel => 'AM/PM';
+
+  @override
+  String get datePickerMinuteLabel => 'Minute';
+
+  @override
   String? get datePickerMinuteSemanticsLabelFew => r'$minute minute';
 
   @override
@@ -1816,6 +2020,12 @@ class CupertinoLocalizationBs extends GlobalCupertinoLocalizations {
 
   @override
   String? get datePickerMinuteSemanticsLabelZero => null;
+
+  @override
+  String get datePickerMonthLabel => 'Month';
+
+  @override
+  String get datePickerYearLabel => 'Year';
 
   @override
   String get expandedHint => 'Suženo';
@@ -1966,10 +2176,19 @@ class CupertinoLocalizationCa extends GlobalCupertinoLocalizations {
   String get cutButtonLabel => 'Retalla';
 
   @override
+  String get datePickerDateLabel => 'Date';
+
+  @override
   String get datePickerDateOrderString => 'dmy';
 
   @override
   String get datePickerDateTimeOrderString => 'date_time_dayPeriod';
+
+  @override
+  String get datePickerDayLabel => 'Day';
+
+  @override
+  String get datePickerHourLabel => 'Hour';
 
   @override
   String? get datePickerHourSemanticsLabelFew => null;
@@ -1990,6 +2209,12 @@ class CupertinoLocalizationCa extends GlobalCupertinoLocalizations {
   String? get datePickerHourSemanticsLabelZero => null;
 
   @override
+  String get datePickerMeridiemLabel => 'AM/PM';
+
+  @override
+  String get datePickerMinuteLabel => 'Minute';
+
+  @override
   String? get datePickerMinuteSemanticsLabelFew => null;
 
   @override
@@ -2006,6 +2231,12 @@ class CupertinoLocalizationCa extends GlobalCupertinoLocalizations {
 
   @override
   String? get datePickerMinuteSemanticsLabelZero => null;
+
+  @override
+  String get datePickerMonthLabel => 'Month';
+
+  @override
+  String get datePickerYearLabel => 'Year';
 
   @override
   String get expandedHint => "S'ha replegat";
@@ -2156,10 +2387,19 @@ class CupertinoLocalizationCs extends GlobalCupertinoLocalizations {
   String get cutButtonLabel => 'Vyjmout';
 
   @override
+  String get datePickerDateLabel => 'Date';
+
+  @override
   String get datePickerDateOrderString => 'mdy';
 
   @override
   String get datePickerDateTimeOrderString => 'date_time_dayPeriod';
+
+  @override
+  String get datePickerDayLabel => 'Day';
+
+  @override
+  String get datePickerHourLabel => 'Hour';
 
   @override
   String? get datePickerHourSemanticsLabelFew => r'$hour hodiny';
@@ -2180,6 +2420,12 @@ class CupertinoLocalizationCs extends GlobalCupertinoLocalizations {
   String? get datePickerHourSemanticsLabelZero => null;
 
   @override
+  String get datePickerMeridiemLabel => 'AM/PM';
+
+  @override
+  String get datePickerMinuteLabel => 'Minute';
+
+  @override
   String? get datePickerMinuteSemanticsLabelFew => r'$minute minuty';
 
   @override
@@ -2196,6 +2442,12 @@ class CupertinoLocalizationCs extends GlobalCupertinoLocalizations {
 
   @override
   String? get datePickerMinuteSemanticsLabelZero => null;
+
+  @override
+  String get datePickerMonthLabel => 'Month';
+
+  @override
+  String get datePickerYearLabel => 'Year';
 
   @override
   String get expandedHint => 'Sbaleno';
@@ -2346,10 +2598,19 @@ class CupertinoLocalizationCy extends GlobalCupertinoLocalizations {
   String get cutButtonLabel => 'Torri';
 
   @override
+  String get datePickerDateLabel => 'Date';
+
+  @override
   String get datePickerDateOrderString => 'dmy';
 
   @override
   String get datePickerDateTimeOrderString => 'date_time_dayPeriod';
+
+  @override
+  String get datePickerDayLabel => 'Day';
+
+  @override
+  String get datePickerHourLabel => 'Hour';
 
   @override
   String? get datePickerHourSemanticsLabelFew => r"$hour o'r gloch";
@@ -2370,6 +2631,12 @@ class CupertinoLocalizationCy extends GlobalCupertinoLocalizations {
   String? get datePickerHourSemanticsLabelZero => r"$hour o'r gloch";
 
   @override
+  String get datePickerMeridiemLabel => 'AM/PM';
+
+  @override
+  String get datePickerMinuteLabel => 'Minute';
+
+  @override
   String? get datePickerMinuteSemanticsLabelFew => r'$minute munud';
 
   @override
@@ -2386,6 +2653,12 @@ class CupertinoLocalizationCy extends GlobalCupertinoLocalizations {
 
   @override
   String? get datePickerMinuteSemanticsLabelZero => r'$minute munud';
+
+  @override
+  String get datePickerMonthLabel => 'Month';
+
+  @override
+  String get datePickerYearLabel => 'Year';
 
   @override
   String get expandedHint => "Wedi'i grebachu";
@@ -2536,10 +2809,19 @@ class CupertinoLocalizationDa extends GlobalCupertinoLocalizations {
   String get cutButtonLabel => 'Klip';
 
   @override
+  String get datePickerDateLabel => 'Date';
+
+  @override
   String get datePickerDateOrderString => 'dmy';
 
   @override
   String get datePickerDateTimeOrderString => 'date_time_dayPeriod';
+
+  @override
+  String get datePickerDayLabel => 'Day';
+
+  @override
+  String get datePickerHourLabel => 'Hour';
 
   @override
   String? get datePickerHourSemanticsLabelFew => null;
@@ -2560,6 +2842,12 @@ class CupertinoLocalizationDa extends GlobalCupertinoLocalizations {
   String? get datePickerHourSemanticsLabelZero => null;
 
   @override
+  String get datePickerMeridiemLabel => 'AM/PM';
+
+  @override
+  String get datePickerMinuteLabel => 'Minute';
+
+  @override
   String? get datePickerMinuteSemanticsLabelFew => null;
 
   @override
@@ -2576,6 +2864,12 @@ class CupertinoLocalizationDa extends GlobalCupertinoLocalizations {
 
   @override
   String? get datePickerMinuteSemanticsLabelZero => null;
+
+  @override
+  String get datePickerMonthLabel => 'Month';
+
+  @override
+  String get datePickerYearLabel => 'Year';
 
   @override
   String get expandedHint => 'Skjult';
@@ -2726,10 +3020,19 @@ class CupertinoLocalizationDe extends GlobalCupertinoLocalizations {
   String get cutButtonLabel => 'Ausschneiden';
 
   @override
+  String get datePickerDateLabel => 'Date';
+
+  @override
   String get datePickerDateOrderString => 'dmy';
 
   @override
   String get datePickerDateTimeOrderString => 'date_time_dayPeriod';
+
+  @override
+  String get datePickerDayLabel => 'Day';
+
+  @override
+  String get datePickerHourLabel => 'Hour';
 
   @override
   String? get datePickerHourSemanticsLabelFew => null;
@@ -2750,6 +3053,12 @@ class CupertinoLocalizationDe extends GlobalCupertinoLocalizations {
   String? get datePickerHourSemanticsLabelZero => null;
 
   @override
+  String get datePickerMeridiemLabel => 'AM/PM';
+
+  @override
+  String get datePickerMinuteLabel => 'Minute';
+
+  @override
   String? get datePickerMinuteSemanticsLabelFew => null;
 
   @override
@@ -2766,6 +3075,12 @@ class CupertinoLocalizationDe extends GlobalCupertinoLocalizations {
 
   @override
   String? get datePickerMinuteSemanticsLabelZero => null;
+
+  @override
+  String get datePickerMonthLabel => 'Month';
+
+  @override
+  String get datePickerYearLabel => 'Year';
 
   @override
   String get expandedHint => 'Minimiert';
@@ -2944,10 +3259,19 @@ class CupertinoLocalizationEl extends GlobalCupertinoLocalizations {
   String get cutButtonLabel => 'Αποκοπή';
 
   @override
+  String get datePickerDateLabel => 'Date';
+
+  @override
   String get datePickerDateOrderString => 'dmy';
 
   @override
   String get datePickerDateTimeOrderString => 'date_time_dayPeriod';
+
+  @override
+  String get datePickerDayLabel => 'Day';
+
+  @override
+  String get datePickerHourLabel => 'Hour';
 
   @override
   String? get datePickerHourSemanticsLabelFew => null;
@@ -2968,6 +3292,12 @@ class CupertinoLocalizationEl extends GlobalCupertinoLocalizations {
   String? get datePickerHourSemanticsLabelZero => null;
 
   @override
+  String get datePickerMeridiemLabel => 'AM/PM';
+
+  @override
+  String get datePickerMinuteLabel => 'Minute';
+
+  @override
   String? get datePickerMinuteSemanticsLabelFew => null;
 
   @override
@@ -2984,6 +3314,12 @@ class CupertinoLocalizationEl extends GlobalCupertinoLocalizations {
 
   @override
   String? get datePickerMinuteSemanticsLabelZero => null;
+
+  @override
+  String get datePickerMonthLabel => 'Month';
+
+  @override
+  String get datePickerYearLabel => 'Year';
 
   @override
   String get expandedHint => 'Συμπτύχθηκε';
@@ -3134,10 +3470,19 @@ class CupertinoLocalizationEn extends GlobalCupertinoLocalizations {
   String get cutButtonLabel => 'Cut';
 
   @override
+  String get datePickerDateLabel => 'Date';
+
+  @override
   String get datePickerDateOrderString => 'mdy';
 
   @override
   String get datePickerDateTimeOrderString => 'date_time_dayPeriod';
+
+  @override
+  String get datePickerDayLabel => 'Day';
+
+  @override
+  String get datePickerHourLabel => 'Hour';
 
   @override
   String? get datePickerHourSemanticsLabelFew => null;
@@ -3158,6 +3503,12 @@ class CupertinoLocalizationEn extends GlobalCupertinoLocalizations {
   String? get datePickerHourSemanticsLabelZero => null;
 
   @override
+  String get datePickerMeridiemLabel => 'AM/PM';
+
+  @override
+  String get datePickerMinuteLabel => 'Minute';
+
+  @override
   String? get datePickerMinuteSemanticsLabelFew => null;
 
   @override
@@ -3174,6 +3525,12 @@ class CupertinoLocalizationEn extends GlobalCupertinoLocalizations {
 
   @override
   String? get datePickerMinuteSemanticsLabelZero => null;
+
+  @override
+  String get datePickerMonthLabel => 'Month';
+
+  @override
+  String get datePickerYearLabel => 'Year';
 
   @override
   String get expandedHint => 'Collapsed';
@@ -3608,10 +3965,19 @@ class CupertinoLocalizationEs extends GlobalCupertinoLocalizations {
   String get cutButtonLabel => 'Cortar';
 
   @override
+  String get datePickerDateLabel => 'Date';
+
+  @override
   String get datePickerDateOrderString => 'dmy';
 
   @override
   String get datePickerDateTimeOrderString => 'date_time_dayPeriod';
+
+  @override
+  String get datePickerDayLabel => 'Day';
+
+  @override
+  String get datePickerHourLabel => 'Hour';
 
   @override
   String? get datePickerHourSemanticsLabelFew => null;
@@ -3632,6 +3998,12 @@ class CupertinoLocalizationEs extends GlobalCupertinoLocalizations {
   String? get datePickerHourSemanticsLabelZero => null;
 
   @override
+  String get datePickerMeridiemLabel => 'AM/PM';
+
+  @override
+  String get datePickerMinuteLabel => 'Minute';
+
+  @override
   String? get datePickerMinuteSemanticsLabelFew => null;
 
   @override
@@ -3648,6 +4020,12 @@ class CupertinoLocalizationEs extends GlobalCupertinoLocalizations {
 
   @override
   String? get datePickerMinuteSemanticsLabelZero => null;
+
+  @override
+  String get datePickerMonthLabel => 'Month';
+
+  @override
+  String get datePickerYearLabel => 'Year';
 
   @override
   String get expandedHint => 'Contraído';
@@ -4958,10 +5336,19 @@ class CupertinoLocalizationEt extends GlobalCupertinoLocalizations {
   String get cutButtonLabel => 'Lõika';
 
   @override
+  String get datePickerDateLabel => 'Date';
+
+  @override
   String get datePickerDateOrderString => 'dmy';
 
   @override
   String get datePickerDateTimeOrderString => 'date_time_dayPeriod';
+
+  @override
+  String get datePickerDayLabel => 'Day';
+
+  @override
+  String get datePickerHourLabel => 'Hour';
 
   @override
   String? get datePickerHourSemanticsLabelFew => null;
@@ -4982,6 +5369,12 @@ class CupertinoLocalizationEt extends GlobalCupertinoLocalizations {
   String? get datePickerHourSemanticsLabelZero => null;
 
   @override
+  String get datePickerMeridiemLabel => 'AM/PM';
+
+  @override
+  String get datePickerMinuteLabel => 'Minute';
+
+  @override
   String? get datePickerMinuteSemanticsLabelFew => null;
 
   @override
@@ -4998,6 +5391,12 @@ class CupertinoLocalizationEt extends GlobalCupertinoLocalizations {
 
   @override
   String? get datePickerMinuteSemanticsLabelZero => null;
+
+  @override
+  String get datePickerMonthLabel => 'Month';
+
+  @override
+  String get datePickerYearLabel => 'Year';
 
   @override
   String get expandedHint => 'Ahendatud';
@@ -5148,10 +5547,19 @@ class CupertinoLocalizationEu extends GlobalCupertinoLocalizations {
   String get cutButtonLabel => 'Ebaki';
 
   @override
+  String get datePickerDateLabel => 'Date';
+
+  @override
   String get datePickerDateOrderString => 'ymd';
 
   @override
   String get datePickerDateTimeOrderString => 'date_time_dayPeriod';
+
+  @override
+  String get datePickerDayLabel => 'Day';
+
+  @override
+  String get datePickerHourLabel => 'Hour';
 
   @override
   String? get datePickerHourSemanticsLabelFew => null;
@@ -5172,6 +5580,12 @@ class CupertinoLocalizationEu extends GlobalCupertinoLocalizations {
   String? get datePickerHourSemanticsLabelZero => null;
 
   @override
+  String get datePickerMeridiemLabel => 'AM/PM';
+
+  @override
+  String get datePickerMinuteLabel => 'Minute';
+
+  @override
   String? get datePickerMinuteSemanticsLabelFew => null;
 
   @override
@@ -5188,6 +5602,12 @@ class CupertinoLocalizationEu extends GlobalCupertinoLocalizations {
 
   @override
   String? get datePickerMinuteSemanticsLabelZero => null;
+
+  @override
+  String get datePickerMonthLabel => 'Month';
+
+  @override
+  String get datePickerYearLabel => 'Year';
 
   @override
   String get expandedHint => 'Tolestuta';
@@ -5338,10 +5758,19 @@ class CupertinoLocalizationFa extends GlobalCupertinoLocalizations {
   String get cutButtonLabel => 'برش';
 
   @override
+  String get datePickerDateLabel => 'Date';
+
+  @override
   String get datePickerDateOrderString => 'ymd';
 
   @override
   String get datePickerDateTimeOrderString => 'date_time_dayPeriod';
+
+  @override
+  String get datePickerDayLabel => 'Day';
+
+  @override
+  String get datePickerHourLabel => 'Hour';
 
   @override
   String? get datePickerHourSemanticsLabelFew => null;
@@ -5362,6 +5791,12 @@ class CupertinoLocalizationFa extends GlobalCupertinoLocalizations {
   String? get datePickerHourSemanticsLabelZero => null;
 
   @override
+  String get datePickerMeridiemLabel => 'AM/PM';
+
+  @override
+  String get datePickerMinuteLabel => 'Minute';
+
+  @override
   String? get datePickerMinuteSemanticsLabelFew => null;
 
   @override
@@ -5378,6 +5813,12 @@ class CupertinoLocalizationFa extends GlobalCupertinoLocalizations {
 
   @override
   String? get datePickerMinuteSemanticsLabelZero => null;
+
+  @override
+  String get datePickerMonthLabel => 'Month';
+
+  @override
+  String get datePickerYearLabel => 'Year';
 
   @override
   String get expandedHint => 'جمع‌شده';
@@ -5528,10 +5969,19 @@ class CupertinoLocalizationFi extends GlobalCupertinoLocalizations {
   String get cutButtonLabel => 'Leikkaa';
 
   @override
+  String get datePickerDateLabel => 'Date';
+
+  @override
   String get datePickerDateOrderString => 'dmy';
 
   @override
   String get datePickerDateTimeOrderString => 'date_time_dayPeriod';
+
+  @override
+  String get datePickerDayLabel => 'Day';
+
+  @override
+  String get datePickerHourLabel => 'Hour';
 
   @override
   String? get datePickerHourSemanticsLabelFew => null;
@@ -5552,6 +6002,12 @@ class CupertinoLocalizationFi extends GlobalCupertinoLocalizations {
   String? get datePickerHourSemanticsLabelZero => null;
 
   @override
+  String get datePickerMeridiemLabel => 'AM/PM';
+
+  @override
+  String get datePickerMinuteLabel => 'Minute';
+
+  @override
   String? get datePickerMinuteSemanticsLabelFew => null;
 
   @override
@@ -5568,6 +6024,12 @@ class CupertinoLocalizationFi extends GlobalCupertinoLocalizations {
 
   @override
   String? get datePickerMinuteSemanticsLabelZero => null;
+
+  @override
+  String get datePickerMonthLabel => 'Month';
+
+  @override
+  String get datePickerYearLabel => 'Year';
 
   @override
   String get expandedHint => 'Tiivistetty';
@@ -5718,10 +6180,19 @@ class CupertinoLocalizationFil extends GlobalCupertinoLocalizations {
   String get cutButtonLabel => 'I-cut';
 
   @override
+  String get datePickerDateLabel => 'Date';
+
+  @override
   String get datePickerDateOrderString => 'mdy';
 
   @override
   String get datePickerDateTimeOrderString => 'date_time_dayPeriod';
+
+  @override
+  String get datePickerDayLabel => 'Day';
+
+  @override
+  String get datePickerHourLabel => 'Hour';
 
   @override
   String? get datePickerHourSemanticsLabelFew => null;
@@ -5742,6 +6213,12 @@ class CupertinoLocalizationFil extends GlobalCupertinoLocalizations {
   String? get datePickerHourSemanticsLabelZero => null;
 
   @override
+  String get datePickerMeridiemLabel => 'AM/PM';
+
+  @override
+  String get datePickerMinuteLabel => 'Minute';
+
+  @override
   String? get datePickerMinuteSemanticsLabelFew => null;
 
   @override
@@ -5758,6 +6235,12 @@ class CupertinoLocalizationFil extends GlobalCupertinoLocalizations {
 
   @override
   String? get datePickerMinuteSemanticsLabelZero => null;
+
+  @override
+  String get datePickerMonthLabel => 'Month';
+
+  @override
+  String get datePickerYearLabel => 'Year';
 
   @override
   String get expandedHint => 'Naka-collapse';
@@ -5908,10 +6391,19 @@ class CupertinoLocalizationFr extends GlobalCupertinoLocalizations {
   String get cutButtonLabel => 'Couper';
 
   @override
+  String get datePickerDateLabel => 'Date';
+
+  @override
   String get datePickerDateOrderString => 'dmy';
 
   @override
   String get datePickerDateTimeOrderString => 'date_time_dayPeriod';
+
+  @override
+  String get datePickerDayLabel => 'Day';
+
+  @override
+  String get datePickerHourLabel => 'Hour';
 
   @override
   String? get datePickerHourSemanticsLabelFew => null;
@@ -5932,6 +6424,12 @@ class CupertinoLocalizationFr extends GlobalCupertinoLocalizations {
   String? get datePickerHourSemanticsLabelZero => null;
 
   @override
+  String get datePickerMeridiemLabel => 'AM/PM';
+
+  @override
+  String get datePickerMinuteLabel => 'Minute';
+
+  @override
   String? get datePickerMinuteSemanticsLabelFew => null;
 
   @override
@@ -5948,6 +6446,12 @@ class CupertinoLocalizationFr extends GlobalCupertinoLocalizations {
 
   @override
   String? get datePickerMinuteSemanticsLabelZero => null;
+
+  @override
+  String get datePickerMonthLabel => 'Month';
+
+  @override
+  String get datePickerYearLabel => 'Year';
 
   @override
   String get expandedHint => 'Réduit';
@@ -6153,10 +6657,19 @@ class CupertinoLocalizationGa extends GlobalCupertinoLocalizations {
   String get cutButtonLabel => 'Gearr';
 
   @override
+  String get datePickerDateLabel => 'Date';
+
+  @override
   String get datePickerDateOrderString => 'dmy';
 
   @override
   String get datePickerDateTimeOrderString => 'date_time_dayPeriod';
+
+  @override
+  String get datePickerDayLabel => 'Day';
+
+  @override
+  String get datePickerHourLabel => 'Hour';
 
   @override
   String? get datePickerHourSemanticsLabelFew => r'$hour a chlog';
@@ -6177,6 +6690,12 @@ class CupertinoLocalizationGa extends GlobalCupertinoLocalizations {
   String? get datePickerHourSemanticsLabelZero => null;
 
   @override
+  String get datePickerMeridiemLabel => 'AM/PM';
+
+  @override
+  String get datePickerMinuteLabel => 'Minute';
+
+  @override
   String? get datePickerMinuteSemanticsLabelFew => r'$minute nóiméad';
 
   @override
@@ -6193,6 +6712,12 @@ class CupertinoLocalizationGa extends GlobalCupertinoLocalizations {
 
   @override
   String? get datePickerMinuteSemanticsLabelZero => null;
+
+  @override
+  String get datePickerMonthLabel => 'Month';
+
+  @override
+  String get datePickerYearLabel => 'Year';
 
   @override
   String get expandedHint => 'Laghdaithe';
@@ -6343,10 +6868,19 @@ class CupertinoLocalizationGl extends GlobalCupertinoLocalizations {
   String get cutButtonLabel => 'Cortar';
 
   @override
+  String get datePickerDateLabel => 'Date';
+
+  @override
   String get datePickerDateOrderString => 'dmy';
 
   @override
   String get datePickerDateTimeOrderString => 'date_time_dayPeriod';
+
+  @override
+  String get datePickerDayLabel => 'Day';
+
+  @override
+  String get datePickerHourLabel => 'Hour';
 
   @override
   String? get datePickerHourSemanticsLabelFew => null;
@@ -6367,6 +6901,12 @@ class CupertinoLocalizationGl extends GlobalCupertinoLocalizations {
   String? get datePickerHourSemanticsLabelZero => null;
 
   @override
+  String get datePickerMeridiemLabel => 'AM/PM';
+
+  @override
+  String get datePickerMinuteLabel => 'Minute';
+
+  @override
   String? get datePickerMinuteSemanticsLabelFew => null;
 
   @override
@@ -6383,6 +6923,12 @@ class CupertinoLocalizationGl extends GlobalCupertinoLocalizations {
 
   @override
   String? get datePickerMinuteSemanticsLabelZero => null;
+
+  @override
+  String get datePickerMonthLabel => 'Month';
+
+  @override
+  String get datePickerYearLabel => 'Year';
 
   @override
   String get expandedHint => 'Contraído';
@@ -6533,10 +7079,19 @@ class CupertinoLocalizationGsw extends GlobalCupertinoLocalizations {
   String get cutButtonLabel => 'Ausschneiden';
 
   @override
+  String get datePickerDateLabel => 'Date';
+
+  @override
   String get datePickerDateOrderString => 'dmy';
 
   @override
   String get datePickerDateTimeOrderString => 'date_time_dayPeriod';
+
+  @override
+  String get datePickerDayLabel => 'Day';
+
+  @override
+  String get datePickerHourLabel => 'Hour';
 
   @override
   String? get datePickerHourSemanticsLabelFew => null;
@@ -6557,6 +7112,12 @@ class CupertinoLocalizationGsw extends GlobalCupertinoLocalizations {
   String? get datePickerHourSemanticsLabelZero => null;
 
   @override
+  String get datePickerMeridiemLabel => 'AM/PM';
+
+  @override
+  String get datePickerMinuteLabel => 'Minute';
+
+  @override
   String? get datePickerMinuteSemanticsLabelFew => null;
 
   @override
@@ -6573,6 +7134,12 @@ class CupertinoLocalizationGsw extends GlobalCupertinoLocalizations {
 
   @override
   String? get datePickerMinuteSemanticsLabelZero => null;
+
+  @override
+  String get datePickerMonthLabel => 'Month';
+
+  @override
+  String get datePickerYearLabel => 'Year';
 
   @override
   String get expandedHint => 'Minimiert';
@@ -6723,10 +7290,19 @@ class CupertinoLocalizationGu extends GlobalCupertinoLocalizations {
   String get cutButtonLabel => 'કાપો';
 
   @override
+  String get datePickerDateLabel => 'Date';
+
+  @override
   String get datePickerDateOrderString => 'dmy';
 
   @override
   String get datePickerDateTimeOrderString => 'date_time_dayPeriod';
+
+  @override
+  String get datePickerDayLabel => 'Day';
+
+  @override
+  String get datePickerHourLabel => 'Hour';
 
   @override
   String? get datePickerHourSemanticsLabelFew => null;
@@ -6747,6 +7323,12 @@ class CupertinoLocalizationGu extends GlobalCupertinoLocalizations {
   String? get datePickerHourSemanticsLabelZero => null;
 
   @override
+  String get datePickerMeridiemLabel => 'AM/PM';
+
+  @override
+  String get datePickerMinuteLabel => 'Minute';
+
+  @override
   String? get datePickerMinuteSemanticsLabelFew => null;
 
   @override
@@ -6763,6 +7345,12 @@ class CupertinoLocalizationGu extends GlobalCupertinoLocalizations {
 
   @override
   String? get datePickerMinuteSemanticsLabelZero => null;
+
+  @override
+  String get datePickerMonthLabel => 'Month';
+
+  @override
+  String get datePickerYearLabel => 'Year';
 
   @override
   String get expandedHint => 'નાની કરી';
@@ -6913,10 +7501,19 @@ class CupertinoLocalizationHe extends GlobalCupertinoLocalizations {
   String get cutButtonLabel => 'גזירה';
 
   @override
+  String get datePickerDateLabel => 'Date';
+
+  @override
   String get datePickerDateOrderString => 'dmy';
 
   @override
   String get datePickerDateTimeOrderString => 'date_time_dayPeriod';
+
+  @override
+  String get datePickerDayLabel => 'Day';
+
+  @override
+  String get datePickerHourLabel => 'Hour';
 
   @override
   String? get datePickerHourSemanticsLabelFew => null;
@@ -6937,6 +7534,12 @@ class CupertinoLocalizationHe extends GlobalCupertinoLocalizations {
   String? get datePickerHourSemanticsLabelZero => null;
 
   @override
+  String get datePickerMeridiemLabel => 'AM/PM';
+
+  @override
+  String get datePickerMinuteLabel => 'Minute';
+
+  @override
   String? get datePickerMinuteSemanticsLabelFew => null;
 
   @override
@@ -6953,6 +7556,12 @@ class CupertinoLocalizationHe extends GlobalCupertinoLocalizations {
 
   @override
   String? get datePickerMinuteSemanticsLabelZero => null;
+
+  @override
+  String get datePickerMonthLabel => 'Month';
+
+  @override
+  String get datePickerYearLabel => 'Year';
 
   @override
   String get expandedHint => 'מכווץ';
@@ -7103,10 +7712,19 @@ class CupertinoLocalizationHi extends GlobalCupertinoLocalizations {
   String get cutButtonLabel => 'काटें';
 
   @override
+  String get datePickerDateLabel => 'Date';
+
+  @override
   String get datePickerDateOrderString => 'dmy';
 
   @override
   String get datePickerDateTimeOrderString => 'date_time_dayPeriod';
+
+  @override
+  String get datePickerDayLabel => 'Day';
+
+  @override
+  String get datePickerHourLabel => 'Hour';
 
   @override
   String? get datePickerHourSemanticsLabelFew => null;
@@ -7127,6 +7745,12 @@ class CupertinoLocalizationHi extends GlobalCupertinoLocalizations {
   String? get datePickerHourSemanticsLabelZero => null;
 
   @override
+  String get datePickerMeridiemLabel => 'AM/PM';
+
+  @override
+  String get datePickerMinuteLabel => 'Minute';
+
+  @override
   String? get datePickerMinuteSemanticsLabelFew => null;
 
   @override
@@ -7143,6 +7767,12 @@ class CupertinoLocalizationHi extends GlobalCupertinoLocalizations {
 
   @override
   String? get datePickerMinuteSemanticsLabelZero => null;
+
+  @override
+  String get datePickerMonthLabel => 'Month';
+
+  @override
+  String get datePickerYearLabel => 'Year';
 
   @override
   String get expandedHint => 'छोटा किया गया';
@@ -7293,10 +7923,19 @@ class CupertinoLocalizationHr extends GlobalCupertinoLocalizations {
   String get cutButtonLabel => 'Izreži';
 
   @override
+  String get datePickerDateLabel => 'Date';
+
+  @override
   String get datePickerDateOrderString => 'dmy';
 
   @override
   String get datePickerDateTimeOrderString => 'date_time_dayPeriod';
+
+  @override
+  String get datePickerDayLabel => 'Day';
+
+  @override
+  String get datePickerHourLabel => 'Hour';
 
   @override
   String? get datePickerHourSemanticsLabelFew => r'$hour sata';
@@ -7317,6 +7956,12 @@ class CupertinoLocalizationHr extends GlobalCupertinoLocalizations {
   String? get datePickerHourSemanticsLabelZero => null;
 
   @override
+  String get datePickerMeridiemLabel => 'AM/PM';
+
+  @override
+  String get datePickerMinuteLabel => 'Minute';
+
+  @override
   String? get datePickerMinuteSemanticsLabelFew => r'$minute minute';
 
   @override
@@ -7333,6 +7978,12 @@ class CupertinoLocalizationHr extends GlobalCupertinoLocalizations {
 
   @override
   String? get datePickerMinuteSemanticsLabelZero => null;
+
+  @override
+  String get datePickerMonthLabel => 'Month';
+
+  @override
+  String get datePickerYearLabel => 'Year';
 
   @override
   String get expandedHint => 'Sažeto';
@@ -7483,10 +8134,19 @@ class CupertinoLocalizationHu extends GlobalCupertinoLocalizations {
   String get cutButtonLabel => 'Kivágás';
 
   @override
+  String get datePickerDateLabel => 'Date';
+
+  @override
   String get datePickerDateOrderString => 'ymd';
 
   @override
   String get datePickerDateTimeOrderString => 'date_dayPeriod_time';
+
+  @override
+  String get datePickerDayLabel => 'Day';
+
+  @override
+  String get datePickerHourLabel => 'Hour';
 
   @override
   String? get datePickerHourSemanticsLabelFew => null;
@@ -7507,6 +8167,12 @@ class CupertinoLocalizationHu extends GlobalCupertinoLocalizations {
   String? get datePickerHourSemanticsLabelZero => null;
 
   @override
+  String get datePickerMeridiemLabel => 'AM/PM';
+
+  @override
+  String get datePickerMinuteLabel => 'Minute';
+
+  @override
   String? get datePickerMinuteSemanticsLabelFew => null;
 
   @override
@@ -7523,6 +8189,12 @@ class CupertinoLocalizationHu extends GlobalCupertinoLocalizations {
 
   @override
   String? get datePickerMinuteSemanticsLabelZero => null;
+
+  @override
+  String get datePickerMonthLabel => 'Month';
+
+  @override
+  String get datePickerYearLabel => 'Year';
 
   @override
   String get expandedHint => 'Összecsukva';
@@ -7673,10 +8345,19 @@ class CupertinoLocalizationHy extends GlobalCupertinoLocalizations {
   String get cutButtonLabel => 'Կտրել';
 
   @override
+  String get datePickerDateLabel => 'Date';
+
+  @override
   String get datePickerDateOrderString => 'dmy';
 
   @override
   String get datePickerDateTimeOrderString => 'date_time_dayPeriod';
+
+  @override
+  String get datePickerDayLabel => 'Day';
+
+  @override
+  String get datePickerHourLabel => 'Hour';
 
   @override
   String? get datePickerHourSemanticsLabelFew => null;
@@ -7697,6 +8378,12 @@ class CupertinoLocalizationHy extends GlobalCupertinoLocalizations {
   String? get datePickerHourSemanticsLabelZero => null;
 
   @override
+  String get datePickerMeridiemLabel => 'AM/PM';
+
+  @override
+  String get datePickerMinuteLabel => 'Minute';
+
+  @override
   String? get datePickerMinuteSemanticsLabelFew => null;
 
   @override
@@ -7713,6 +8400,12 @@ class CupertinoLocalizationHy extends GlobalCupertinoLocalizations {
 
   @override
   String? get datePickerMinuteSemanticsLabelZero => null;
+
+  @override
+  String get datePickerMonthLabel => 'Month';
+
+  @override
+  String get datePickerYearLabel => 'Year';
 
   @override
   String get expandedHint => 'Ծալված է';
@@ -7863,10 +8556,19 @@ class CupertinoLocalizationId extends GlobalCupertinoLocalizations {
   String get cutButtonLabel => 'Potong';
 
   @override
+  String get datePickerDateLabel => 'Date';
+
+  @override
   String get datePickerDateOrderString => 'dmy';
 
   @override
   String get datePickerDateTimeOrderString => 'date_time_dayPeriod';
+
+  @override
+  String get datePickerDayLabel => 'Day';
+
+  @override
+  String get datePickerHourLabel => 'Hour';
 
   @override
   String? get datePickerHourSemanticsLabelFew => null;
@@ -7887,6 +8589,12 @@ class CupertinoLocalizationId extends GlobalCupertinoLocalizations {
   String? get datePickerHourSemanticsLabelZero => null;
 
   @override
+  String get datePickerMeridiemLabel => 'AM/PM';
+
+  @override
+  String get datePickerMinuteLabel => 'Minute';
+
+  @override
   String? get datePickerMinuteSemanticsLabelFew => null;
 
   @override
@@ -7903,6 +8611,12 @@ class CupertinoLocalizationId extends GlobalCupertinoLocalizations {
 
   @override
   String? get datePickerMinuteSemanticsLabelZero => null;
+
+  @override
+  String get datePickerMonthLabel => 'Month';
+
+  @override
+  String get datePickerYearLabel => 'Year';
 
   @override
   String get expandedHint => 'Diciutkan';
@@ -8053,10 +8767,19 @@ class CupertinoLocalizationIs extends GlobalCupertinoLocalizations {
   String get cutButtonLabel => 'Klippa';
 
   @override
+  String get datePickerDateLabel => 'Date';
+
+  @override
   String get datePickerDateOrderString => 'dmy';
 
   @override
   String get datePickerDateTimeOrderString => 'date_time_dayPeriod';
+
+  @override
+  String get datePickerDayLabel => 'Day';
+
+  @override
+  String get datePickerHourLabel => 'Hour';
 
   @override
   String? get datePickerHourSemanticsLabelFew => null;
@@ -8077,6 +8800,12 @@ class CupertinoLocalizationIs extends GlobalCupertinoLocalizations {
   String? get datePickerHourSemanticsLabelZero => null;
 
   @override
+  String get datePickerMeridiemLabel => 'AM/PM';
+
+  @override
+  String get datePickerMinuteLabel => 'Minute';
+
+  @override
   String? get datePickerMinuteSemanticsLabelFew => null;
 
   @override
@@ -8093,6 +8822,12 @@ class CupertinoLocalizationIs extends GlobalCupertinoLocalizations {
 
   @override
   String? get datePickerMinuteSemanticsLabelZero => null;
+
+  @override
+  String get datePickerMonthLabel => 'Month';
+
+  @override
+  String get datePickerYearLabel => 'Year';
 
   @override
   String get expandedHint => 'Minnkað';
@@ -8243,10 +8978,19 @@ class CupertinoLocalizationIt extends GlobalCupertinoLocalizations {
   String get cutButtonLabel => 'Taglia';
 
   @override
+  String get datePickerDateLabel => 'Date';
+
+  @override
   String get datePickerDateOrderString => 'dmy';
 
   @override
   String get datePickerDateTimeOrderString => 'date_time_dayPeriod';
+
+  @override
+  String get datePickerDayLabel => 'Day';
+
+  @override
+  String get datePickerHourLabel => 'Hour';
 
   @override
   String? get datePickerHourSemanticsLabelFew => null;
@@ -8267,6 +9011,12 @@ class CupertinoLocalizationIt extends GlobalCupertinoLocalizations {
   String? get datePickerHourSemanticsLabelZero => null;
 
   @override
+  String get datePickerMeridiemLabel => 'AM/PM';
+
+  @override
+  String get datePickerMinuteLabel => 'Minute';
+
+  @override
   String? get datePickerMinuteSemanticsLabelFew => null;
 
   @override
@@ -8283,6 +9033,12 @@ class CupertinoLocalizationIt extends GlobalCupertinoLocalizations {
 
   @override
   String? get datePickerMinuteSemanticsLabelZero => null;
+
+  @override
+  String get datePickerMonthLabel => 'Month';
+
+  @override
+  String get datePickerYearLabel => 'Year';
 
   @override
   String get expandedHint => 'Compresso';
@@ -8433,10 +9189,19 @@ class CupertinoLocalizationJa extends GlobalCupertinoLocalizations {
   String get cutButtonLabel => '切り取り';
 
   @override
+  String get datePickerDateLabel => 'Date';
+
+  @override
   String get datePickerDateOrderString => 'ymd';
 
   @override
   String get datePickerDateTimeOrderString => 'date_time_dayPeriod';
+
+  @override
+  String get datePickerDayLabel => 'Day';
+
+  @override
+  String get datePickerHourLabel => 'Hour';
 
   @override
   String? get datePickerHourSemanticsLabelFew => null;
@@ -8457,6 +9222,12 @@ class CupertinoLocalizationJa extends GlobalCupertinoLocalizations {
   String? get datePickerHourSemanticsLabelZero => null;
 
   @override
+  String get datePickerMeridiemLabel => 'AM/PM';
+
+  @override
+  String get datePickerMinuteLabel => 'Minute';
+
+  @override
   String? get datePickerMinuteSemanticsLabelFew => null;
 
   @override
@@ -8473,6 +9244,12 @@ class CupertinoLocalizationJa extends GlobalCupertinoLocalizations {
 
   @override
   String? get datePickerMinuteSemanticsLabelZero => null;
+
+  @override
+  String get datePickerMonthLabel => 'Month';
+
+  @override
+  String get datePickerYearLabel => 'Year';
 
   @override
   String get expandedHint => '閉じました';
@@ -8623,10 +9400,19 @@ class CupertinoLocalizationKa extends GlobalCupertinoLocalizations {
   String get cutButtonLabel => 'ამოჭრა';
 
   @override
+  String get datePickerDateLabel => 'Date';
+
+  @override
   String get datePickerDateOrderString => 'dmy';
 
   @override
   String get datePickerDateTimeOrderString => 'date_dayPeriod_time';
+
+  @override
+  String get datePickerDayLabel => 'Day';
+
+  @override
+  String get datePickerHourLabel => 'Hour';
 
   @override
   String? get datePickerHourSemanticsLabelFew => null;
@@ -8647,6 +9433,12 @@ class CupertinoLocalizationKa extends GlobalCupertinoLocalizations {
   String? get datePickerHourSemanticsLabelZero => null;
 
   @override
+  String get datePickerMeridiemLabel => 'AM/PM';
+
+  @override
+  String get datePickerMinuteLabel => 'Minute';
+
+  @override
   String? get datePickerMinuteSemanticsLabelFew => null;
 
   @override
@@ -8663,6 +9455,12 @@ class CupertinoLocalizationKa extends GlobalCupertinoLocalizations {
 
   @override
   String? get datePickerMinuteSemanticsLabelZero => null;
+
+  @override
+  String get datePickerMonthLabel => 'Month';
+
+  @override
+  String get datePickerYearLabel => 'Year';
 
   @override
   String get expandedHint => 'ჩაკეცილია';
@@ -8813,10 +9611,19 @@ class CupertinoLocalizationKk extends GlobalCupertinoLocalizations {
   String get cutButtonLabel => 'Қию';
 
   @override
+  String get datePickerDateLabel => 'Date';
+
+  @override
   String get datePickerDateOrderString => 'dmy';
 
   @override
   String get datePickerDateTimeOrderString => 'date_time_dayPeriod';
+
+  @override
+  String get datePickerDayLabel => 'Day';
+
+  @override
+  String get datePickerHourLabel => 'Hour';
 
   @override
   String? get datePickerHourSemanticsLabelFew => null;
@@ -8837,6 +9644,12 @@ class CupertinoLocalizationKk extends GlobalCupertinoLocalizations {
   String? get datePickerHourSemanticsLabelZero => null;
 
   @override
+  String get datePickerMeridiemLabel => 'AM/PM';
+
+  @override
+  String get datePickerMinuteLabel => 'Minute';
+
+  @override
   String? get datePickerMinuteSemanticsLabelFew => null;
 
   @override
@@ -8853,6 +9666,12 @@ class CupertinoLocalizationKk extends GlobalCupertinoLocalizations {
 
   @override
   String? get datePickerMinuteSemanticsLabelZero => null;
+
+  @override
+  String get datePickerMonthLabel => 'Month';
+
+  @override
+  String get datePickerYearLabel => 'Year';
 
   @override
   String get expandedHint => 'Жиылды';
@@ -9003,10 +9822,19 @@ class CupertinoLocalizationKm extends GlobalCupertinoLocalizations {
   String get cutButtonLabel => 'កាត់';
 
   @override
+  String get datePickerDateLabel => 'Date';
+
+  @override
   String get datePickerDateOrderString => 'dmy';
 
   @override
   String get datePickerDateTimeOrderString => 'date_time_dayPeriod';
+
+  @override
+  String get datePickerDayLabel => 'Day';
+
+  @override
+  String get datePickerHourLabel => 'Hour';
 
   @override
   String? get datePickerHourSemanticsLabelFew => null;
@@ -9027,6 +9855,12 @@ class CupertinoLocalizationKm extends GlobalCupertinoLocalizations {
   String? get datePickerHourSemanticsLabelZero => null;
 
   @override
+  String get datePickerMeridiemLabel => 'AM/PM';
+
+  @override
+  String get datePickerMinuteLabel => 'Minute';
+
+  @override
   String? get datePickerMinuteSemanticsLabelFew => null;
 
   @override
@@ -9043,6 +9877,12 @@ class CupertinoLocalizationKm extends GlobalCupertinoLocalizations {
 
   @override
   String? get datePickerMinuteSemanticsLabelZero => null;
+
+  @override
+  String get datePickerMonthLabel => 'Month';
+
+  @override
+  String get datePickerYearLabel => 'Year';
 
   @override
   String get expandedHint => 'បាន​បង្រួម';
@@ -9193,10 +10033,19 @@ class CupertinoLocalizationKn extends GlobalCupertinoLocalizations {
   String get cutButtonLabel => '\u{c95}\u{ca4}\u{ccd}\u{ca4}\u{cb0}\u{cbf}\u{cb8}\u{cbf}';
 
   @override
+  String get datePickerDateLabel => 'Date';
+
+  @override
   String get datePickerDateOrderString => 'dmy';
 
   @override
   String get datePickerDateTimeOrderString => 'date_time_dayPeriod';
+
+  @override
+  String get datePickerDayLabel => 'Day';
+
+  @override
+  String get datePickerHourLabel => 'Hour';
 
   @override
   String? get datePickerHourSemanticsLabelFew => null;
@@ -9217,6 +10066,12 @@ class CupertinoLocalizationKn extends GlobalCupertinoLocalizations {
   String? get datePickerHourSemanticsLabelZero => null;
 
   @override
+  String get datePickerMeridiemLabel => 'AM/PM';
+
+  @override
+  String get datePickerMinuteLabel => 'Minute';
+
+  @override
   String? get datePickerMinuteSemanticsLabelFew => null;
 
   @override
@@ -9233,6 +10088,12 @@ class CupertinoLocalizationKn extends GlobalCupertinoLocalizations {
 
   @override
   String? get datePickerMinuteSemanticsLabelZero => null;
+
+  @override
+  String get datePickerMonthLabel => 'Month';
+
+  @override
+  String get datePickerYearLabel => 'Year';
 
   @override
   String get expandedHint => '\u{c95}\u{cc1}\u{c97}\u{ccd}\u{c97}\u{cbf}\u{cb8}\u{cb2}\u{cbe}\u{c97}\u{cbf}\u{ca6}\u{cc6}';
@@ -9383,10 +10244,19 @@ class CupertinoLocalizationKo extends GlobalCupertinoLocalizations {
   String get cutButtonLabel => '잘라내기';
 
   @override
+  String get datePickerDateLabel => 'Date';
+
+  @override
   String get datePickerDateOrderString => 'ymd';
 
   @override
   String get datePickerDateTimeOrderString => 'date_dayPeriod_time';
+
+  @override
+  String get datePickerDayLabel => 'Day';
+
+  @override
+  String get datePickerHourLabel => 'Hour';
 
   @override
   String? get datePickerHourSemanticsLabelFew => null;
@@ -9407,6 +10277,12 @@ class CupertinoLocalizationKo extends GlobalCupertinoLocalizations {
   String? get datePickerHourSemanticsLabelZero => null;
 
   @override
+  String get datePickerMeridiemLabel => 'AM/PM';
+
+  @override
+  String get datePickerMinuteLabel => 'Minute';
+
+  @override
   String? get datePickerMinuteSemanticsLabelFew => null;
 
   @override
@@ -9423,6 +10299,12 @@ class CupertinoLocalizationKo extends GlobalCupertinoLocalizations {
 
   @override
   String? get datePickerMinuteSemanticsLabelZero => null;
+
+  @override
+  String get datePickerMonthLabel => 'Month';
+
+  @override
+  String get datePickerYearLabel => 'Year';
 
   @override
   String get expandedHint => '접힘';
@@ -9573,10 +10455,19 @@ class CupertinoLocalizationKy extends GlobalCupertinoLocalizations {
   String get cutButtonLabel => 'Кесүү';
 
   @override
+  String get datePickerDateLabel => 'Date';
+
+  @override
   String get datePickerDateOrderString => 'dmy';
 
   @override
   String get datePickerDateTimeOrderString => 'date_time_dayPeriod';
+
+  @override
+  String get datePickerDayLabel => 'Day';
+
+  @override
+  String get datePickerHourLabel => 'Hour';
 
   @override
   String? get datePickerHourSemanticsLabelFew => null;
@@ -9597,6 +10488,12 @@ class CupertinoLocalizationKy extends GlobalCupertinoLocalizations {
   String? get datePickerHourSemanticsLabelZero => null;
 
   @override
+  String get datePickerMeridiemLabel => 'AM/PM';
+
+  @override
+  String get datePickerMinuteLabel => 'Minute';
+
+  @override
   String? get datePickerMinuteSemanticsLabelFew => null;
 
   @override
@@ -9613,6 +10510,12 @@ class CupertinoLocalizationKy extends GlobalCupertinoLocalizations {
 
   @override
   String? get datePickerMinuteSemanticsLabelZero => null;
+
+  @override
+  String get datePickerMonthLabel => 'Month';
+
+  @override
+  String get datePickerYearLabel => 'Year';
 
   @override
   String get expandedHint => 'Жыйыштырылды';
@@ -9763,10 +10666,19 @@ class CupertinoLocalizationLo extends GlobalCupertinoLocalizations {
   String get cutButtonLabel => 'ຕັດ';
 
   @override
+  String get datePickerDateLabel => 'Date';
+
+  @override
   String get datePickerDateOrderString => 'mdy';
 
   @override
   String get datePickerDateTimeOrderString => 'date_time_dayPeriod';
+
+  @override
+  String get datePickerDayLabel => 'Day';
+
+  @override
+  String get datePickerHourLabel => 'Hour';
 
   @override
   String? get datePickerHourSemanticsLabelFew => null;
@@ -9787,6 +10699,12 @@ class CupertinoLocalizationLo extends GlobalCupertinoLocalizations {
   String? get datePickerHourSemanticsLabelZero => null;
 
   @override
+  String get datePickerMeridiemLabel => 'AM/PM';
+
+  @override
+  String get datePickerMinuteLabel => 'Minute';
+
+  @override
   String? get datePickerMinuteSemanticsLabelFew => null;
 
   @override
@@ -9803,6 +10721,12 @@ class CupertinoLocalizationLo extends GlobalCupertinoLocalizations {
 
   @override
   String? get datePickerMinuteSemanticsLabelZero => null;
+
+  @override
+  String get datePickerMonthLabel => 'Month';
+
+  @override
+  String get datePickerYearLabel => 'Year';
 
   @override
   String get expandedHint => 'ຫຍໍ້ລົງແລ້ວ';
@@ -9953,10 +10877,19 @@ class CupertinoLocalizationLt extends GlobalCupertinoLocalizations {
   String get cutButtonLabel => 'Iškirpti';
 
   @override
+  String get datePickerDateLabel => 'Date';
+
+  @override
   String get datePickerDateOrderString => 'ymd';
 
   @override
   String get datePickerDateTimeOrderString => 'date_time_dayPeriod';
+
+  @override
+  String get datePickerDayLabel => 'Day';
+
+  @override
+  String get datePickerHourLabel => 'Hour';
 
   @override
   String? get datePickerHourSemanticsLabelFew => r'$hour val.';
@@ -9977,6 +10910,12 @@ class CupertinoLocalizationLt extends GlobalCupertinoLocalizations {
   String? get datePickerHourSemanticsLabelZero => null;
 
   @override
+  String get datePickerMeridiemLabel => 'AM/PM';
+
+  @override
+  String get datePickerMinuteLabel => 'Minute';
+
+  @override
   String? get datePickerMinuteSemanticsLabelFew => r'$minute min.';
 
   @override
@@ -9993,6 +10932,12 @@ class CupertinoLocalizationLt extends GlobalCupertinoLocalizations {
 
   @override
   String? get datePickerMinuteSemanticsLabelZero => null;
+
+  @override
+  String get datePickerMonthLabel => 'Month';
+
+  @override
+  String get datePickerYearLabel => 'Year';
 
   @override
   String get expandedHint => 'Sutraukta';
@@ -10143,10 +11088,19 @@ class CupertinoLocalizationLv extends GlobalCupertinoLocalizations {
   String get cutButtonLabel => 'Izgriezt';
 
   @override
+  String get datePickerDateLabel => 'Date';
+
+  @override
   String get datePickerDateOrderString => 'mdy';
 
   @override
   String get datePickerDateTimeOrderString => 'date_time_dayPeriod';
+
+  @override
+  String get datePickerDayLabel => 'Day';
+
+  @override
+  String get datePickerHourLabel => 'Hour';
 
   @override
   String? get datePickerHourSemanticsLabelFew => null;
@@ -10167,6 +11121,12 @@ class CupertinoLocalizationLv extends GlobalCupertinoLocalizations {
   String? get datePickerHourSemanticsLabelZero => r'plkst. $hour';
 
   @override
+  String get datePickerMeridiemLabel => 'AM/PM';
+
+  @override
+  String get datePickerMinuteLabel => 'Minute';
+
+  @override
   String? get datePickerMinuteSemanticsLabelFew => null;
 
   @override
@@ -10183,6 +11143,12 @@ class CupertinoLocalizationLv extends GlobalCupertinoLocalizations {
 
   @override
   String? get datePickerMinuteSemanticsLabelZero => r'$minute minūtes';
+
+  @override
+  String get datePickerMonthLabel => 'Month';
+
+  @override
+  String get datePickerYearLabel => 'Year';
 
   @override
   String get expandedHint => 'Sakļauts';
@@ -10333,10 +11299,19 @@ class CupertinoLocalizationMk extends GlobalCupertinoLocalizations {
   String get cutButtonLabel => 'Исечи';
 
   @override
+  String get datePickerDateLabel => 'Date';
+
+  @override
   String get datePickerDateOrderString => 'dmy';
 
   @override
   String get datePickerDateTimeOrderString => 'date_time_dayPeriod';
+
+  @override
+  String get datePickerDayLabel => 'Day';
+
+  @override
+  String get datePickerHourLabel => 'Hour';
 
   @override
   String? get datePickerHourSemanticsLabelFew => null;
@@ -10357,6 +11332,12 @@ class CupertinoLocalizationMk extends GlobalCupertinoLocalizations {
   String? get datePickerHourSemanticsLabelZero => null;
 
   @override
+  String get datePickerMeridiemLabel => 'AM/PM';
+
+  @override
+  String get datePickerMinuteLabel => 'Minute';
+
+  @override
   String? get datePickerMinuteSemanticsLabelFew => null;
 
   @override
@@ -10373,6 +11354,12 @@ class CupertinoLocalizationMk extends GlobalCupertinoLocalizations {
 
   @override
   String? get datePickerMinuteSemanticsLabelZero => null;
+
+  @override
+  String get datePickerMonthLabel => 'Month';
+
+  @override
+  String get datePickerYearLabel => 'Year';
 
   @override
   String get expandedHint => 'Собрано';
@@ -10523,10 +11510,19 @@ class CupertinoLocalizationMl extends GlobalCupertinoLocalizations {
   String get cutButtonLabel => 'മുറിക്കുക';
 
   @override
+  String get datePickerDateLabel => 'Date';
+
+  @override
   String get datePickerDateOrderString => 'dmy';
 
   @override
   String get datePickerDateTimeOrderString => 'date_time_dayPeriod';
+
+  @override
+  String get datePickerDayLabel => 'Day';
+
+  @override
+  String get datePickerHourLabel => 'Hour';
 
   @override
   String? get datePickerHourSemanticsLabelFew => null;
@@ -10547,6 +11543,12 @@ class CupertinoLocalizationMl extends GlobalCupertinoLocalizations {
   String? get datePickerHourSemanticsLabelZero => null;
 
   @override
+  String get datePickerMeridiemLabel => 'AM/PM';
+
+  @override
+  String get datePickerMinuteLabel => 'Minute';
+
+  @override
   String? get datePickerMinuteSemanticsLabelFew => null;
 
   @override
@@ -10563,6 +11565,12 @@ class CupertinoLocalizationMl extends GlobalCupertinoLocalizations {
 
   @override
   String? get datePickerMinuteSemanticsLabelZero => null;
+
+  @override
+  String get datePickerMonthLabel => 'Month';
+
+  @override
+  String get datePickerYearLabel => 'Year';
 
   @override
   String get expandedHint => 'ചുരുക്കി';
@@ -10713,10 +11721,19 @@ class CupertinoLocalizationMn extends GlobalCupertinoLocalizations {
   String get cutButtonLabel => 'Таслах';
 
   @override
+  String get datePickerDateLabel => 'Date';
+
+  @override
   String get datePickerDateOrderString => 'mdy';
 
   @override
   String get datePickerDateTimeOrderString => 'date_time_dayPeriod';
+
+  @override
+  String get datePickerDayLabel => 'Day';
+
+  @override
+  String get datePickerHourLabel => 'Hour';
 
   @override
   String? get datePickerHourSemanticsLabelFew => null;
@@ -10737,6 +11754,12 @@ class CupertinoLocalizationMn extends GlobalCupertinoLocalizations {
   String? get datePickerHourSemanticsLabelZero => null;
 
   @override
+  String get datePickerMeridiemLabel => 'AM/PM';
+
+  @override
+  String get datePickerMinuteLabel => 'Minute';
+
+  @override
   String? get datePickerMinuteSemanticsLabelFew => null;
 
   @override
@@ -10753,6 +11776,12 @@ class CupertinoLocalizationMn extends GlobalCupertinoLocalizations {
 
   @override
   String? get datePickerMinuteSemanticsLabelZero => null;
+
+  @override
+  String get datePickerMonthLabel => 'Month';
+
+  @override
+  String get datePickerYearLabel => 'Year';
 
   @override
   String get expandedHint => 'Хураасан';
@@ -10903,10 +11932,19 @@ class CupertinoLocalizationMr extends GlobalCupertinoLocalizations {
   String get cutButtonLabel => 'कट करा';
 
   @override
+  String get datePickerDateLabel => 'Date';
+
+  @override
   String get datePickerDateOrderString => 'mdy';
 
   @override
   String get datePickerDateTimeOrderString => 'date_time_dayPeriod';
+
+  @override
+  String get datePickerDayLabel => 'Day';
+
+  @override
+  String get datePickerHourLabel => 'Hour';
 
   @override
   String? get datePickerHourSemanticsLabelFew => null;
@@ -10927,6 +11965,12 @@ class CupertinoLocalizationMr extends GlobalCupertinoLocalizations {
   String? get datePickerHourSemanticsLabelZero => null;
 
   @override
+  String get datePickerMeridiemLabel => 'AM/PM';
+
+  @override
+  String get datePickerMinuteLabel => 'Minute';
+
+  @override
   String? get datePickerMinuteSemanticsLabelFew => null;
 
   @override
@@ -10943,6 +11987,12 @@ class CupertinoLocalizationMr extends GlobalCupertinoLocalizations {
 
   @override
   String? get datePickerMinuteSemanticsLabelZero => null;
+
+  @override
+  String get datePickerMonthLabel => 'Month';
+
+  @override
+  String get datePickerYearLabel => 'Year';
 
   @override
   String get expandedHint => 'कोलॅप्स केले';
@@ -11093,10 +12143,19 @@ class CupertinoLocalizationMs extends GlobalCupertinoLocalizations {
   String get cutButtonLabel => 'Potong';
 
   @override
+  String get datePickerDateLabel => 'Date';
+
+  @override
   String get datePickerDateOrderString => 'dmy';
 
   @override
   String get datePickerDateTimeOrderString => 'date_time_dayPeriod';
+
+  @override
+  String get datePickerDayLabel => 'Day';
+
+  @override
+  String get datePickerHourLabel => 'Hour';
 
   @override
   String? get datePickerHourSemanticsLabelFew => null;
@@ -11117,6 +12176,12 @@ class CupertinoLocalizationMs extends GlobalCupertinoLocalizations {
   String? get datePickerHourSemanticsLabelZero => null;
 
   @override
+  String get datePickerMeridiemLabel => 'AM/PM';
+
+  @override
+  String get datePickerMinuteLabel => 'Minute';
+
+  @override
   String? get datePickerMinuteSemanticsLabelFew => null;
 
   @override
@@ -11133,6 +12198,12 @@ class CupertinoLocalizationMs extends GlobalCupertinoLocalizations {
 
   @override
   String? get datePickerMinuteSemanticsLabelZero => null;
+
+  @override
+  String get datePickerMonthLabel => 'Month';
+
+  @override
+  String get datePickerYearLabel => 'Year';
 
   @override
   String get expandedHint => 'Dikuncupkan';
@@ -11283,10 +12354,19 @@ class CupertinoLocalizationMy extends GlobalCupertinoLocalizations {
   String get cutButtonLabel => 'ဖြတ်ယူရန်';
 
   @override
+  String get datePickerDateLabel => 'Date';
+
+  @override
   String get datePickerDateOrderString => 'mdy';
 
   @override
   String get datePickerDateTimeOrderString => 'date_time_dayPeriod';
+
+  @override
+  String get datePickerDayLabel => 'Day';
+
+  @override
+  String get datePickerHourLabel => 'Hour';
 
   @override
   String? get datePickerHourSemanticsLabelFew => null;
@@ -11307,6 +12387,12 @@ class CupertinoLocalizationMy extends GlobalCupertinoLocalizations {
   String? get datePickerHourSemanticsLabelZero => null;
 
   @override
+  String get datePickerMeridiemLabel => 'AM/PM';
+
+  @override
+  String get datePickerMinuteLabel => 'Minute';
+
+  @override
   String? get datePickerMinuteSemanticsLabelFew => null;
 
   @override
@@ -11323,6 +12409,12 @@ class CupertinoLocalizationMy extends GlobalCupertinoLocalizations {
 
   @override
   String? get datePickerMinuteSemanticsLabelZero => null;
+
+  @override
+  String get datePickerMonthLabel => 'Month';
+
+  @override
+  String get datePickerYearLabel => 'Year';
 
   @override
   String get expandedHint => 'ခေါက်ထားသည်';
@@ -11473,10 +12565,19 @@ class CupertinoLocalizationNb extends GlobalCupertinoLocalizations {
   String get cutButtonLabel => 'Klipp ut';
 
   @override
+  String get datePickerDateLabel => 'Date';
+
+  @override
   String get datePickerDateOrderString => 'dmy';
 
   @override
   String get datePickerDateTimeOrderString => 'date_time_dayPeriod';
+
+  @override
+  String get datePickerDayLabel => 'Day';
+
+  @override
+  String get datePickerHourLabel => 'Hour';
 
   @override
   String? get datePickerHourSemanticsLabelFew => null;
@@ -11497,6 +12598,12 @@ class CupertinoLocalizationNb extends GlobalCupertinoLocalizations {
   String? get datePickerHourSemanticsLabelZero => null;
 
   @override
+  String get datePickerMeridiemLabel => 'AM/PM';
+
+  @override
+  String get datePickerMinuteLabel => 'Minute';
+
+  @override
   String? get datePickerMinuteSemanticsLabelFew => null;
 
   @override
@@ -11513,6 +12620,12 @@ class CupertinoLocalizationNb extends GlobalCupertinoLocalizations {
 
   @override
   String? get datePickerMinuteSemanticsLabelZero => null;
+
+  @override
+  String get datePickerMonthLabel => 'Month';
+
+  @override
+  String get datePickerYearLabel => 'Year';
 
   @override
   String get expandedHint => 'Skjules';
@@ -11663,10 +12776,19 @@ class CupertinoLocalizationNe extends GlobalCupertinoLocalizations {
   String get cutButtonLabel => 'कट गर्नुहोस्';
 
   @override
+  String get datePickerDateLabel => 'Date';
+
+  @override
   String get datePickerDateOrderString => 'mdy';
 
   @override
   String get datePickerDateTimeOrderString => 'date_time_dayPeriod';
+
+  @override
+  String get datePickerDayLabel => 'Day';
+
+  @override
+  String get datePickerHourLabel => 'Hour';
 
   @override
   String? get datePickerHourSemanticsLabelFew => null;
@@ -11687,6 +12809,12 @@ class CupertinoLocalizationNe extends GlobalCupertinoLocalizations {
   String? get datePickerHourSemanticsLabelZero => null;
 
   @override
+  String get datePickerMeridiemLabel => 'AM/PM';
+
+  @override
+  String get datePickerMinuteLabel => 'Minute';
+
+  @override
   String? get datePickerMinuteSemanticsLabelFew => null;
 
   @override
@@ -11703,6 +12831,12 @@ class CupertinoLocalizationNe extends GlobalCupertinoLocalizations {
 
   @override
   String? get datePickerMinuteSemanticsLabelZero => null;
+
+  @override
+  String get datePickerMonthLabel => 'Month';
+
+  @override
+  String get datePickerYearLabel => 'Year';
 
   @override
   String get expandedHint => 'कोल्याप्स गरियो';
@@ -11853,10 +12987,19 @@ class CupertinoLocalizationNl extends GlobalCupertinoLocalizations {
   String get cutButtonLabel => 'Knippen';
 
   @override
+  String get datePickerDateLabel => 'Date';
+
+  @override
   String get datePickerDateOrderString => 'dmy';
 
   @override
   String get datePickerDateTimeOrderString => 'date_time_dayPeriod';
+
+  @override
+  String get datePickerDayLabel => 'Day';
+
+  @override
+  String get datePickerHourLabel => 'Hour';
 
   @override
   String? get datePickerHourSemanticsLabelFew => null;
@@ -11877,6 +13020,12 @@ class CupertinoLocalizationNl extends GlobalCupertinoLocalizations {
   String? get datePickerHourSemanticsLabelZero => null;
 
   @override
+  String get datePickerMeridiemLabel => 'AM/PM';
+
+  @override
+  String get datePickerMinuteLabel => 'Minute';
+
+  @override
   String? get datePickerMinuteSemanticsLabelFew => null;
 
   @override
@@ -11893,6 +13042,12 @@ class CupertinoLocalizationNl extends GlobalCupertinoLocalizations {
 
   @override
   String? get datePickerMinuteSemanticsLabelZero => null;
+
+  @override
+  String get datePickerMonthLabel => 'Month';
+
+  @override
+  String get datePickerYearLabel => 'Year';
 
   @override
   String get expandedHint => 'Samengevouwen';
@@ -12043,10 +13198,19 @@ class CupertinoLocalizationNo extends GlobalCupertinoLocalizations {
   String get cutButtonLabel => 'Klipp ut';
 
   @override
+  String get datePickerDateLabel => 'Date';
+
+  @override
   String get datePickerDateOrderString => 'dmy';
 
   @override
   String get datePickerDateTimeOrderString => 'date_time_dayPeriod';
+
+  @override
+  String get datePickerDayLabel => 'Day';
+
+  @override
+  String get datePickerHourLabel => 'Hour';
 
   @override
   String? get datePickerHourSemanticsLabelFew => null;
@@ -12067,6 +13231,12 @@ class CupertinoLocalizationNo extends GlobalCupertinoLocalizations {
   String? get datePickerHourSemanticsLabelZero => null;
 
   @override
+  String get datePickerMeridiemLabel => 'AM/PM';
+
+  @override
+  String get datePickerMinuteLabel => 'Minute';
+
+  @override
   String? get datePickerMinuteSemanticsLabelFew => null;
 
   @override
@@ -12083,6 +13253,12 @@ class CupertinoLocalizationNo extends GlobalCupertinoLocalizations {
 
   @override
   String? get datePickerMinuteSemanticsLabelZero => null;
+
+  @override
+  String get datePickerMonthLabel => 'Month';
+
+  @override
+  String get datePickerYearLabel => 'Year';
 
   @override
   String get expandedHint => 'Skjules';
@@ -12233,10 +13409,19 @@ class CupertinoLocalizationOr extends GlobalCupertinoLocalizations {
   String get cutButtonLabel => 'କଟ କରନ୍ତୁ';
 
   @override
+  String get datePickerDateLabel => 'Date';
+
+  @override
   String get datePickerDateOrderString => 'dmy';
 
   @override
   String get datePickerDateTimeOrderString => 'date_time_dayPeriod';
+
+  @override
+  String get datePickerDayLabel => 'Day';
+
+  @override
+  String get datePickerHourLabel => 'Hour';
 
   @override
   String? get datePickerHourSemanticsLabelFew => null;
@@ -12257,6 +13442,12 @@ class CupertinoLocalizationOr extends GlobalCupertinoLocalizations {
   String? get datePickerHourSemanticsLabelZero => null;
 
   @override
+  String get datePickerMeridiemLabel => 'AM/PM';
+
+  @override
+  String get datePickerMinuteLabel => 'Minute';
+
+  @override
   String? get datePickerMinuteSemanticsLabelFew => null;
 
   @override
@@ -12273,6 +13464,12 @@ class CupertinoLocalizationOr extends GlobalCupertinoLocalizations {
 
   @override
   String? get datePickerMinuteSemanticsLabelZero => null;
+
+  @override
+  String get datePickerMonthLabel => 'Month';
+
+  @override
+  String get datePickerYearLabel => 'Year';
 
   @override
   String get expandedHint => 'ସଙ୍କୁଚିତ କରାଯାଇଛି';
@@ -12423,10 +13620,19 @@ class CupertinoLocalizationPa extends GlobalCupertinoLocalizations {
   String get cutButtonLabel => 'ਕੱਟ ਕਰੋ';
 
   @override
+  String get datePickerDateLabel => 'Date';
+
+  @override
   String get datePickerDateOrderString => 'dmy';
 
   @override
   String get datePickerDateTimeOrderString => 'date_time_dayPeriod';
+
+  @override
+  String get datePickerDayLabel => 'Day';
+
+  @override
+  String get datePickerHourLabel => 'Hour';
 
   @override
   String? get datePickerHourSemanticsLabelFew => null;
@@ -12447,6 +13653,12 @@ class CupertinoLocalizationPa extends GlobalCupertinoLocalizations {
   String? get datePickerHourSemanticsLabelZero => null;
 
   @override
+  String get datePickerMeridiemLabel => 'AM/PM';
+
+  @override
+  String get datePickerMinuteLabel => 'Minute';
+
+  @override
   String? get datePickerMinuteSemanticsLabelFew => null;
 
   @override
@@ -12463,6 +13675,12 @@ class CupertinoLocalizationPa extends GlobalCupertinoLocalizations {
 
   @override
   String? get datePickerMinuteSemanticsLabelZero => null;
+
+  @override
+  String get datePickerMonthLabel => 'Month';
+
+  @override
+  String get datePickerYearLabel => 'Year';
 
   @override
   String get expandedHint => 'ਸਮੇਟਿਆ ਗਿਆ';
@@ -12613,10 +13831,19 @@ class CupertinoLocalizationPl extends GlobalCupertinoLocalizations {
   String get cutButtonLabel => 'Wytnij';
 
   @override
+  String get datePickerDateLabel => 'Date';
+
+  @override
   String get datePickerDateOrderString => 'dmy';
 
   @override
   String get datePickerDateTimeOrderString => 'date_time_dayPeriod';
+
+  @override
+  String get datePickerDayLabel => 'Day';
+
+  @override
+  String get datePickerHourLabel => 'Hour';
 
   @override
   String? get datePickerHourSemanticsLabelFew => r'$hour';
@@ -12637,6 +13864,12 @@ class CupertinoLocalizationPl extends GlobalCupertinoLocalizations {
   String? get datePickerHourSemanticsLabelZero => null;
 
   @override
+  String get datePickerMeridiemLabel => 'AM/PM';
+
+  @override
+  String get datePickerMinuteLabel => 'Minute';
+
+  @override
   String? get datePickerMinuteSemanticsLabelFew => r'$minute minuty';
 
   @override
@@ -12653,6 +13886,12 @@ class CupertinoLocalizationPl extends GlobalCupertinoLocalizations {
 
   @override
   String? get datePickerMinuteSemanticsLabelZero => null;
+
+  @override
+  String get datePickerMonthLabel => 'Month';
+
+  @override
+  String get datePickerYearLabel => 'Year';
 
   @override
   String get expandedHint => 'Zwinięto';
@@ -12803,10 +14042,19 @@ class CupertinoLocalizationPt extends GlobalCupertinoLocalizations {
   String get cutButtonLabel => 'Cortar';
 
   @override
+  String get datePickerDateLabel => 'Date';
+
+  @override
   String get datePickerDateOrderString => 'dmy';
 
   @override
   String get datePickerDateTimeOrderString => 'date_time_dayPeriod';
+
+  @override
+  String get datePickerDayLabel => 'Day';
+
+  @override
+  String get datePickerHourLabel => 'Hour';
 
   @override
   String? get datePickerHourSemanticsLabelFew => null;
@@ -12827,6 +14075,12 @@ class CupertinoLocalizationPt extends GlobalCupertinoLocalizations {
   String? get datePickerHourSemanticsLabelZero => null;
 
   @override
+  String get datePickerMeridiemLabel => 'AM/PM';
+
+  @override
+  String get datePickerMinuteLabel => 'Minute';
+
+  @override
   String? get datePickerMinuteSemanticsLabelFew => null;
 
   @override
@@ -12843,6 +14097,12 @@ class CupertinoLocalizationPt extends GlobalCupertinoLocalizations {
 
   @override
   String? get datePickerMinuteSemanticsLabelZero => null;
+
+  @override
+  String get datePickerMonthLabel => 'Month';
+
+  @override
+  String get datePickerYearLabel => 'Year';
 
   @override
   String get expandedHint => 'Fechado.';
@@ -13063,10 +14323,19 @@ class CupertinoLocalizationRo extends GlobalCupertinoLocalizations {
   String get cutButtonLabel => 'Decupați';
 
   @override
+  String get datePickerDateLabel => 'Date';
+
+  @override
   String get datePickerDateOrderString => 'dmy';
 
   @override
   String get datePickerDateTimeOrderString => 'date_time_dayPeriod';
+
+  @override
+  String get datePickerDayLabel => 'Day';
+
+  @override
+  String get datePickerHourLabel => 'Hour';
 
   @override
   String? get datePickerHourSemanticsLabelFew => r'Ora $hour';
@@ -13087,6 +14356,12 @@ class CupertinoLocalizationRo extends GlobalCupertinoLocalizations {
   String? get datePickerHourSemanticsLabelZero => null;
 
   @override
+  String get datePickerMeridiemLabel => 'AM/PM';
+
+  @override
+  String get datePickerMinuteLabel => 'Minute';
+
+  @override
   String? get datePickerMinuteSemanticsLabelFew => r'$minute minute';
 
   @override
@@ -13103,6 +14378,12 @@ class CupertinoLocalizationRo extends GlobalCupertinoLocalizations {
 
   @override
   String? get datePickerMinuteSemanticsLabelZero => null;
+
+  @override
+  String get datePickerMonthLabel => 'Month';
+
+  @override
+  String get datePickerYearLabel => 'Year';
 
   @override
   String get expandedHint => 'Restrâns';
@@ -13253,10 +14534,19 @@ class CupertinoLocalizationRu extends GlobalCupertinoLocalizations {
   String get cutButtonLabel => 'Вырезать';
 
   @override
+  String get datePickerDateLabel => 'Date';
+
+  @override
   String get datePickerDateOrderString => 'dmy';
 
   @override
   String get datePickerDateTimeOrderString => 'date_time_dayPeriod';
+
+  @override
+  String get datePickerDayLabel => 'Day';
+
+  @override
+  String get datePickerHourLabel => 'Hour';
 
   @override
   String? get datePickerHourSemanticsLabelFew => r'$hour часа';
@@ -13277,6 +14567,12 @@ class CupertinoLocalizationRu extends GlobalCupertinoLocalizations {
   String? get datePickerHourSemanticsLabelZero => null;
 
   @override
+  String get datePickerMeridiemLabel => 'AM/PM';
+
+  @override
+  String get datePickerMinuteLabel => 'Minute';
+
+  @override
   String? get datePickerMinuteSemanticsLabelFew => r'$minute минуты';
 
   @override
@@ -13293,6 +14589,12 @@ class CupertinoLocalizationRu extends GlobalCupertinoLocalizations {
 
   @override
   String? get datePickerMinuteSemanticsLabelZero => null;
+
+  @override
+  String get datePickerMonthLabel => 'Month';
+
+  @override
+  String get datePickerYearLabel => 'Year';
 
   @override
   String get expandedHint => 'Свернуто';
@@ -13443,10 +14745,19 @@ class CupertinoLocalizationSi extends GlobalCupertinoLocalizations {
   String get cutButtonLabel => 'කපන්න';
 
   @override
+  String get datePickerDateLabel => 'Date';
+
+  @override
   String get datePickerDateOrderString => 'ymd';
 
   @override
   String get datePickerDateTimeOrderString => 'date_dayPeriod_time';
+
+  @override
+  String get datePickerDayLabel => 'Day';
+
+  @override
+  String get datePickerHourLabel => 'Hour';
 
   @override
   String? get datePickerHourSemanticsLabelFew => null;
@@ -13467,6 +14778,12 @@ class CupertinoLocalizationSi extends GlobalCupertinoLocalizations {
   String? get datePickerHourSemanticsLabelZero => null;
 
   @override
+  String get datePickerMeridiemLabel => 'AM/PM';
+
+  @override
+  String get datePickerMinuteLabel => 'Minute';
+
+  @override
   String? get datePickerMinuteSemanticsLabelFew => null;
 
   @override
@@ -13483,6 +14800,12 @@ class CupertinoLocalizationSi extends GlobalCupertinoLocalizations {
 
   @override
   String? get datePickerMinuteSemanticsLabelZero => null;
+
+  @override
+  String get datePickerMonthLabel => 'Month';
+
+  @override
+  String get datePickerYearLabel => 'Year';
 
   @override
   String get expandedHint => 'හකුළන ලදි';
@@ -13633,10 +14956,19 @@ class CupertinoLocalizationSk extends GlobalCupertinoLocalizations {
   String get cutButtonLabel => 'Vystrihnúť';
 
   @override
+  String get datePickerDateLabel => 'Date';
+
+  @override
   String get datePickerDateOrderString => 'mdy';
 
   @override
   String get datePickerDateTimeOrderString => 'date_time_dayPeriod';
+
+  @override
+  String get datePickerDayLabel => 'Day';
+
+  @override
+  String get datePickerHourLabel => 'Hour';
 
   @override
   String? get datePickerHourSemanticsLabelFew => r'$hour hodiny';
@@ -13657,6 +14989,12 @@ class CupertinoLocalizationSk extends GlobalCupertinoLocalizations {
   String? get datePickerHourSemanticsLabelZero => null;
 
   @override
+  String get datePickerMeridiemLabel => 'AM/PM';
+
+  @override
+  String get datePickerMinuteLabel => 'Minute';
+
+  @override
   String? get datePickerMinuteSemanticsLabelFew => r'$minute minúty';
 
   @override
@@ -13673,6 +15011,12 @@ class CupertinoLocalizationSk extends GlobalCupertinoLocalizations {
 
   @override
   String? get datePickerMinuteSemanticsLabelZero => null;
+
+  @override
+  String get datePickerMonthLabel => 'Month';
+
+  @override
+  String get datePickerYearLabel => 'Year';
 
   @override
   String get expandedHint => 'Zbalené';
@@ -13823,10 +15167,19 @@ class CupertinoLocalizationSl extends GlobalCupertinoLocalizations {
   String get cutButtonLabel => 'Izreži';
 
   @override
+  String get datePickerDateLabel => 'Date';
+
+  @override
   String get datePickerDateOrderString => 'dmy';
 
   @override
   String get datePickerDateTimeOrderString => 'date_time_dayPeriod';
+
+  @override
+  String get datePickerDayLabel => 'Day';
+
+  @override
+  String get datePickerHourLabel => 'Hour';
 
   @override
   String? get datePickerHourSemanticsLabelFew => r'$hour';
@@ -13847,6 +15200,12 @@ class CupertinoLocalizationSl extends GlobalCupertinoLocalizations {
   String? get datePickerHourSemanticsLabelZero => null;
 
   @override
+  String get datePickerMeridiemLabel => 'AM/PM';
+
+  @override
+  String get datePickerMinuteLabel => 'Minute';
+
+  @override
   String? get datePickerMinuteSemanticsLabelFew => r'$minute minute';
 
   @override
@@ -13863,6 +15222,12 @@ class CupertinoLocalizationSl extends GlobalCupertinoLocalizations {
 
   @override
   String? get datePickerMinuteSemanticsLabelZero => null;
+
+  @override
+  String get datePickerMonthLabel => 'Month';
+
+  @override
+  String get datePickerYearLabel => 'Year';
 
   @override
   String get expandedHint => 'Strnjeno';
@@ -14013,10 +15378,19 @@ class CupertinoLocalizationSq extends GlobalCupertinoLocalizations {
   String get cutButtonLabel => 'Prit';
 
   @override
+  String get datePickerDateLabel => 'Date';
+
+  @override
   String get datePickerDateOrderString => 'dmy';
 
   @override
   String get datePickerDateTimeOrderString => 'date_time_dayPeriod';
+
+  @override
+  String get datePickerDayLabel => 'Day';
+
+  @override
+  String get datePickerHourLabel => 'Hour';
 
   @override
   String? get datePickerHourSemanticsLabelFew => null;
@@ -14037,6 +15411,12 @@ class CupertinoLocalizationSq extends GlobalCupertinoLocalizations {
   String? get datePickerHourSemanticsLabelZero => null;
 
   @override
+  String get datePickerMeridiemLabel => 'AM/PM';
+
+  @override
+  String get datePickerMinuteLabel => 'Minute';
+
+  @override
   String? get datePickerMinuteSemanticsLabelFew => null;
 
   @override
@@ -14053,6 +15433,12 @@ class CupertinoLocalizationSq extends GlobalCupertinoLocalizations {
 
   @override
   String? get datePickerMinuteSemanticsLabelZero => null;
+
+  @override
+  String get datePickerMonthLabel => 'Month';
+
+  @override
+  String get datePickerYearLabel => 'Year';
 
   @override
   String get expandedHint => 'U palos';
@@ -14203,10 +15589,19 @@ class CupertinoLocalizationSr extends GlobalCupertinoLocalizations {
   String get cutButtonLabel => 'Исеци';
 
   @override
+  String get datePickerDateLabel => 'Date';
+
+  @override
   String get datePickerDateOrderString => 'dmy';
 
   @override
   String get datePickerDateTimeOrderString => 'date_time_dayPeriod';
+
+  @override
+  String get datePickerDayLabel => 'Day';
+
+  @override
+  String get datePickerHourLabel => 'Hour';
 
   @override
   String? get datePickerHourSemanticsLabelFew => r'$hour сата';
@@ -14227,6 +15622,12 @@ class CupertinoLocalizationSr extends GlobalCupertinoLocalizations {
   String? get datePickerHourSemanticsLabelZero => null;
 
   @override
+  String get datePickerMeridiemLabel => 'AM/PM';
+
+  @override
+  String get datePickerMinuteLabel => 'Minute';
+
+  @override
   String? get datePickerMinuteSemanticsLabelFew => r'$minute минута';
 
   @override
@@ -14243,6 +15644,12 @@ class CupertinoLocalizationSr extends GlobalCupertinoLocalizations {
 
   @override
   String? get datePickerMinuteSemanticsLabelZero => null;
+
+  @override
+  String get datePickerMonthLabel => 'Month';
+
+  @override
+  String get datePickerYearLabel => 'Year';
 
   @override
   String get expandedHint => 'Скупљено је';
@@ -14551,10 +15958,19 @@ class CupertinoLocalizationSv extends GlobalCupertinoLocalizations {
   String get cutButtonLabel => 'Klipp ut';
 
   @override
+  String get datePickerDateLabel => 'Date';
+
+  @override
   String get datePickerDateOrderString => 'dmy';
 
   @override
   String get datePickerDateTimeOrderString => 'date_time_dayPeriod';
+
+  @override
+  String get datePickerDayLabel => 'Day';
+
+  @override
+  String get datePickerHourLabel => 'Hour';
 
   @override
   String? get datePickerHourSemanticsLabelFew => null;
@@ -14575,6 +15991,12 @@ class CupertinoLocalizationSv extends GlobalCupertinoLocalizations {
   String? get datePickerHourSemanticsLabelZero => null;
 
   @override
+  String get datePickerMeridiemLabel => 'AM/PM';
+
+  @override
+  String get datePickerMinuteLabel => 'Minute';
+
+  @override
   String? get datePickerMinuteSemanticsLabelFew => null;
 
   @override
@@ -14591,6 +16013,12 @@ class CupertinoLocalizationSv extends GlobalCupertinoLocalizations {
 
   @override
   String? get datePickerMinuteSemanticsLabelZero => null;
+
+  @override
+  String get datePickerMonthLabel => 'Month';
+
+  @override
+  String get datePickerYearLabel => 'Year';
 
   @override
   String get expandedHint => 'Komprimerades';
@@ -14741,10 +16169,19 @@ class CupertinoLocalizationSw extends GlobalCupertinoLocalizations {
   String get cutButtonLabel => 'Kata';
 
   @override
+  String get datePickerDateLabel => 'Date';
+
+  @override
   String get datePickerDateOrderString => 'dmy';
 
   @override
   String get datePickerDateTimeOrderString => 'date_time_dayPeriod';
+
+  @override
+  String get datePickerDayLabel => 'Day';
+
+  @override
+  String get datePickerHourLabel => 'Hour';
 
   @override
   String? get datePickerHourSemanticsLabelFew => null;
@@ -14765,6 +16202,12 @@ class CupertinoLocalizationSw extends GlobalCupertinoLocalizations {
   String? get datePickerHourSemanticsLabelZero => null;
 
   @override
+  String get datePickerMeridiemLabel => 'AM/PM';
+
+  @override
+  String get datePickerMinuteLabel => 'Minute';
+
+  @override
   String? get datePickerMinuteSemanticsLabelFew => null;
 
   @override
@@ -14781,6 +16224,12 @@ class CupertinoLocalizationSw extends GlobalCupertinoLocalizations {
 
   @override
   String? get datePickerMinuteSemanticsLabelZero => null;
+
+  @override
+  String get datePickerMonthLabel => 'Month';
+
+  @override
+  String get datePickerYearLabel => 'Year';
 
   @override
   String get expandedHint => 'Imekunjwa';
@@ -14931,10 +16380,19 @@ class CupertinoLocalizationTa extends GlobalCupertinoLocalizations {
   String get cutButtonLabel => 'வெட்டு';
 
   @override
+  String get datePickerDateLabel => 'Date';
+
+  @override
   String get datePickerDateOrderString => 'dmy';
 
   @override
   String get datePickerDateTimeOrderString => 'date_time_dayPeriod';
+
+  @override
+  String get datePickerDayLabel => 'Day';
+
+  @override
+  String get datePickerHourLabel => 'Hour';
 
   @override
   String? get datePickerHourSemanticsLabelFew => null;
@@ -14955,6 +16413,12 @@ class CupertinoLocalizationTa extends GlobalCupertinoLocalizations {
   String? get datePickerHourSemanticsLabelZero => null;
 
   @override
+  String get datePickerMeridiemLabel => 'AM/PM';
+
+  @override
+  String get datePickerMinuteLabel => 'Minute';
+
+  @override
   String? get datePickerMinuteSemanticsLabelFew => null;
 
   @override
@@ -14971,6 +16435,12 @@ class CupertinoLocalizationTa extends GlobalCupertinoLocalizations {
 
   @override
   String? get datePickerMinuteSemanticsLabelZero => null;
+
+  @override
+  String get datePickerMonthLabel => 'Month';
+
+  @override
+  String get datePickerYearLabel => 'Year';
 
   @override
   String get expandedHint => 'சுருக்கப்பட்டது';
@@ -15121,10 +16591,19 @@ class CupertinoLocalizationTe extends GlobalCupertinoLocalizations {
   String get cutButtonLabel => 'కత్తిరించండి';
 
   @override
+  String get datePickerDateLabel => 'Date';
+
+  @override
   String get datePickerDateOrderString => 'mdy';
 
   @override
   String get datePickerDateTimeOrderString => 'date_time_dayPeriod';
+
+  @override
+  String get datePickerDayLabel => 'Day';
+
+  @override
+  String get datePickerHourLabel => 'Hour';
 
   @override
   String? get datePickerHourSemanticsLabelFew => null;
@@ -15145,6 +16624,12 @@ class CupertinoLocalizationTe extends GlobalCupertinoLocalizations {
   String? get datePickerHourSemanticsLabelZero => null;
 
   @override
+  String get datePickerMeridiemLabel => 'AM/PM';
+
+  @override
+  String get datePickerMinuteLabel => 'Minute';
+
+  @override
   String? get datePickerMinuteSemanticsLabelFew => null;
 
   @override
@@ -15161,6 +16646,12 @@ class CupertinoLocalizationTe extends GlobalCupertinoLocalizations {
 
   @override
   String? get datePickerMinuteSemanticsLabelZero => null;
+
+  @override
+  String get datePickerMonthLabel => 'Month';
+
+  @override
+  String get datePickerYearLabel => 'Year';
 
   @override
   String get expandedHint => 'కుదించబడింది';
@@ -15311,10 +16802,19 @@ class CupertinoLocalizationTh extends GlobalCupertinoLocalizations {
   String get cutButtonLabel => 'ตัด';
 
   @override
+  String get datePickerDateLabel => 'Date';
+
+  @override
   String get datePickerDateOrderString => 'dmy';
 
   @override
   String get datePickerDateTimeOrderString => 'date_time_dayPeriod';
+
+  @override
+  String get datePickerDayLabel => 'Day';
+
+  @override
+  String get datePickerHourLabel => 'Hour';
 
   @override
   String? get datePickerHourSemanticsLabelFew => null;
@@ -15335,6 +16835,12 @@ class CupertinoLocalizationTh extends GlobalCupertinoLocalizations {
   String? get datePickerHourSemanticsLabelZero => null;
 
   @override
+  String get datePickerMeridiemLabel => 'AM/PM';
+
+  @override
+  String get datePickerMinuteLabel => 'Minute';
+
+  @override
   String? get datePickerMinuteSemanticsLabelFew => null;
 
   @override
@@ -15351,6 +16857,12 @@ class CupertinoLocalizationTh extends GlobalCupertinoLocalizations {
 
   @override
   String? get datePickerMinuteSemanticsLabelZero => null;
+
+  @override
+  String get datePickerMonthLabel => 'Month';
+
+  @override
+  String get datePickerYearLabel => 'Year';
 
   @override
   String get expandedHint => 'ยุบ';
@@ -15501,10 +17013,19 @@ class CupertinoLocalizationTl extends GlobalCupertinoLocalizations {
   String get cutButtonLabel => 'I-cut';
 
   @override
+  String get datePickerDateLabel => 'Date';
+
+  @override
   String get datePickerDateOrderString => 'mdy';
 
   @override
   String get datePickerDateTimeOrderString => 'date_time_dayPeriod';
+
+  @override
+  String get datePickerDayLabel => 'Day';
+
+  @override
+  String get datePickerHourLabel => 'Hour';
 
   @override
   String? get datePickerHourSemanticsLabelFew => null;
@@ -15525,6 +17046,12 @@ class CupertinoLocalizationTl extends GlobalCupertinoLocalizations {
   String? get datePickerHourSemanticsLabelZero => null;
 
   @override
+  String get datePickerMeridiemLabel => 'AM/PM';
+
+  @override
+  String get datePickerMinuteLabel => 'Minute';
+
+  @override
   String? get datePickerMinuteSemanticsLabelFew => null;
 
   @override
@@ -15541,6 +17068,12 @@ class CupertinoLocalizationTl extends GlobalCupertinoLocalizations {
 
   @override
   String? get datePickerMinuteSemanticsLabelZero => null;
+
+  @override
+  String get datePickerMonthLabel => 'Month';
+
+  @override
+  String get datePickerYearLabel => 'Year';
 
   @override
   String get expandedHint => 'Naka-collapse';
@@ -15691,10 +17224,19 @@ class CupertinoLocalizationTr extends GlobalCupertinoLocalizations {
   String get cutButtonLabel => 'Kes';
 
   @override
+  String get datePickerDateLabel => 'Date';
+
+  @override
   String get datePickerDateOrderString => 'dmy';
 
   @override
   String get datePickerDateTimeOrderString => 'date_time_dayPeriod';
+
+  @override
+  String get datePickerDayLabel => 'Day';
+
+  @override
+  String get datePickerHourLabel => 'Hour';
 
   @override
   String? get datePickerHourSemanticsLabelFew => null;
@@ -15715,6 +17257,12 @@ class CupertinoLocalizationTr extends GlobalCupertinoLocalizations {
   String? get datePickerHourSemanticsLabelZero => null;
 
   @override
+  String get datePickerMeridiemLabel => 'AM/PM';
+
+  @override
+  String get datePickerMinuteLabel => 'Minute';
+
+  @override
   String? get datePickerMinuteSemanticsLabelFew => null;
 
   @override
@@ -15731,6 +17279,12 @@ class CupertinoLocalizationTr extends GlobalCupertinoLocalizations {
 
   @override
   String? get datePickerMinuteSemanticsLabelZero => null;
+
+  @override
+  String get datePickerMonthLabel => 'Month';
+
+  @override
+  String get datePickerYearLabel => 'Year';
 
   @override
   String get expandedHint => 'Daraltıldı';
@@ -15881,10 +17435,19 @@ class CupertinoLocalizationUg extends GlobalCupertinoLocalizations {
   String get cutButtonLabel => 'كېسىش';
 
   @override
+  String get datePickerDateLabel => 'Date';
+
+  @override
   String get datePickerDateOrderString => 'ymd';
 
   @override
   String get datePickerDateTimeOrderString => 'date_dayPeriod_time';
+
+  @override
+  String get datePickerDayLabel => 'Day';
+
+  @override
+  String get datePickerHourLabel => 'Hour';
 
   @override
   String? get datePickerHourSemanticsLabelFew => null;
@@ -15905,6 +17468,12 @@ class CupertinoLocalizationUg extends GlobalCupertinoLocalizations {
   String? get datePickerHourSemanticsLabelZero => null;
 
   @override
+  String get datePickerMeridiemLabel => 'AM/PM';
+
+  @override
+  String get datePickerMinuteLabel => 'Minute';
+
+  @override
   String? get datePickerMinuteSemanticsLabelFew => null;
 
   @override
@@ -15921,6 +17490,12 @@ class CupertinoLocalizationUg extends GlobalCupertinoLocalizations {
 
   @override
   String? get datePickerMinuteSemanticsLabelZero => null;
+
+  @override
+  String get datePickerMonthLabel => 'Month';
+
+  @override
+  String get datePickerYearLabel => 'Year';
 
   @override
   String get expandedHint => 'يىغىلدى';
@@ -16071,10 +17646,19 @@ class CupertinoLocalizationUk extends GlobalCupertinoLocalizations {
   String get cutButtonLabel => 'Вирізати';
 
   @override
+  String get datePickerDateLabel => 'Date';
+
+  @override
   String get datePickerDateOrderString => 'mdy';
 
   @override
   String get datePickerDateTimeOrderString => 'date_time_dayPeriod';
+
+  @override
+  String get datePickerDayLabel => 'Day';
+
+  @override
+  String get datePickerHourLabel => 'Hour';
 
   @override
   String? get datePickerHourSemanticsLabelFew => r'$hour години';
@@ -16095,6 +17679,12 @@ class CupertinoLocalizationUk extends GlobalCupertinoLocalizations {
   String? get datePickerHourSemanticsLabelZero => null;
 
   @override
+  String get datePickerMeridiemLabel => 'AM/PM';
+
+  @override
+  String get datePickerMinuteLabel => 'Minute';
+
+  @override
   String? get datePickerMinuteSemanticsLabelFew => r'$minute хвилини';
 
   @override
@@ -16111,6 +17701,12 @@ class CupertinoLocalizationUk extends GlobalCupertinoLocalizations {
 
   @override
   String? get datePickerMinuteSemanticsLabelZero => null;
+
+  @override
+  String get datePickerMonthLabel => 'Month';
+
+  @override
+  String get datePickerYearLabel => 'Year';
 
   @override
   String get expandedHint => 'Згорнуто';
@@ -16261,10 +17857,19 @@ class CupertinoLocalizationUr extends GlobalCupertinoLocalizations {
   String get cutButtonLabel => 'کٹ کریں';
 
   @override
+  String get datePickerDateLabel => 'Date';
+
+  @override
   String get datePickerDateOrderString => 'dmy';
 
   @override
   String get datePickerDateTimeOrderString => 'date_time_dayPeriod';
+
+  @override
+  String get datePickerDayLabel => 'Day';
+
+  @override
+  String get datePickerHourLabel => 'Hour';
 
   @override
   String? get datePickerHourSemanticsLabelFew => null;
@@ -16285,6 +17890,12 @@ class CupertinoLocalizationUr extends GlobalCupertinoLocalizations {
   String? get datePickerHourSemanticsLabelZero => null;
 
   @override
+  String get datePickerMeridiemLabel => 'AM/PM';
+
+  @override
+  String get datePickerMinuteLabel => 'Minute';
+
+  @override
   String? get datePickerMinuteSemanticsLabelFew => null;
 
   @override
@@ -16301,6 +17912,12 @@ class CupertinoLocalizationUr extends GlobalCupertinoLocalizations {
 
   @override
   String? get datePickerMinuteSemanticsLabelZero => null;
+
+  @override
+  String get datePickerMonthLabel => 'Month';
+
+  @override
+  String get datePickerYearLabel => 'Year';
 
   @override
   String get expandedHint => 'سکڑا ہوا';
@@ -16451,10 +18068,19 @@ class CupertinoLocalizationUz extends GlobalCupertinoLocalizations {
   String get cutButtonLabel => 'Kesib olish';
 
   @override
+  String get datePickerDateLabel => 'Date';
+
+  @override
   String get datePickerDateOrderString => 'mdy';
 
   @override
   String get datePickerDateTimeOrderString => 'date_time_dayPeriod';
+
+  @override
+  String get datePickerDayLabel => 'Day';
+
+  @override
+  String get datePickerHourLabel => 'Hour';
 
   @override
   String? get datePickerHourSemanticsLabelFew => null;
@@ -16475,6 +18101,12 @@ class CupertinoLocalizationUz extends GlobalCupertinoLocalizations {
   String? get datePickerHourSemanticsLabelZero => null;
 
   @override
+  String get datePickerMeridiemLabel => 'AM/PM';
+
+  @override
+  String get datePickerMinuteLabel => 'Minute';
+
+  @override
   String? get datePickerMinuteSemanticsLabelFew => null;
 
   @override
@@ -16491,6 +18123,12 @@ class CupertinoLocalizationUz extends GlobalCupertinoLocalizations {
 
   @override
   String? get datePickerMinuteSemanticsLabelZero => null;
+
+  @override
+  String get datePickerMonthLabel => 'Month';
+
+  @override
+  String get datePickerYearLabel => 'Year';
 
   @override
   String get expandedHint => 'Yigʻilgan';
@@ -16641,10 +18279,19 @@ class CupertinoLocalizationVi extends GlobalCupertinoLocalizations {
   String get cutButtonLabel => 'Cắt';
 
   @override
+  String get datePickerDateLabel => 'Date';
+
+  @override
   String get datePickerDateOrderString => 'dmy';
 
   @override
   String get datePickerDateTimeOrderString => 'date_time_dayPeriod';
+
+  @override
+  String get datePickerDayLabel => 'Day';
+
+  @override
+  String get datePickerHourLabel => 'Hour';
 
   @override
   String? get datePickerHourSemanticsLabelFew => null;
@@ -16665,6 +18312,12 @@ class CupertinoLocalizationVi extends GlobalCupertinoLocalizations {
   String? get datePickerHourSemanticsLabelZero => null;
 
   @override
+  String get datePickerMeridiemLabel => 'AM/PM';
+
+  @override
+  String get datePickerMinuteLabel => 'Minute';
+
+  @override
   String? get datePickerMinuteSemanticsLabelFew => null;
 
   @override
@@ -16681,6 +18334,12 @@ class CupertinoLocalizationVi extends GlobalCupertinoLocalizations {
 
   @override
   String? get datePickerMinuteSemanticsLabelZero => null;
+
+  @override
+  String get datePickerMonthLabel => 'Month';
+
+  @override
+  String get datePickerYearLabel => 'Year';
 
   @override
   String get expandedHint => 'Đã thu gọn';
@@ -16831,10 +18490,19 @@ class CupertinoLocalizationZh extends GlobalCupertinoLocalizations {
   String get cutButtonLabel => '剪切';
 
   @override
+  String get datePickerDateLabel => 'Date';
+
+  @override
   String get datePickerDateOrderString => 'ymd';
 
   @override
   String get datePickerDateTimeOrderString => 'date_time_dayPeriod';
+
+  @override
+  String get datePickerDayLabel => 'Day';
+
+  @override
+  String get datePickerHourLabel => 'Hour';
 
   @override
   String? get datePickerHourSemanticsLabelFew => null;
@@ -16855,6 +18523,12 @@ class CupertinoLocalizationZh extends GlobalCupertinoLocalizations {
   String? get datePickerHourSemanticsLabelZero => null;
 
   @override
+  String get datePickerMeridiemLabel => 'AM/PM';
+
+  @override
+  String get datePickerMinuteLabel => 'Minute';
+
+  @override
   String? get datePickerMinuteSemanticsLabelFew => null;
 
   @override
@@ -16871,6 +18545,12 @@ class CupertinoLocalizationZh extends GlobalCupertinoLocalizations {
 
   @override
   String? get datePickerMinuteSemanticsLabelZero => null;
+
+  @override
+  String get datePickerMonthLabel => 'Month';
+
+  @override
+  String get datePickerYearLabel => 'Year';
 
   @override
   String get expandedHint => '已收起';
@@ -17220,10 +18900,19 @@ class CupertinoLocalizationZu extends GlobalCupertinoLocalizations {
   String get cutButtonLabel => 'Sika';
 
   @override
+  String get datePickerDateLabel => 'Date';
+
+  @override
   String get datePickerDateOrderString => 'mdy';
 
   @override
   String get datePickerDateTimeOrderString => 'date_time_dayPeriod';
+
+  @override
+  String get datePickerDayLabel => 'Day';
+
+  @override
+  String get datePickerHourLabel => 'Hour';
 
   @override
   String? get datePickerHourSemanticsLabelFew => null;
@@ -17244,6 +18933,12 @@ class CupertinoLocalizationZu extends GlobalCupertinoLocalizations {
   String? get datePickerHourSemanticsLabelZero => null;
 
   @override
+  String get datePickerMeridiemLabel => 'AM/PM';
+
+  @override
+  String get datePickerMinuteLabel => 'Minute';
+
+  @override
   String? get datePickerMinuteSemanticsLabelFew => null;
 
   @override
@@ -17260,6 +18955,12 @@ class CupertinoLocalizationZu extends GlobalCupertinoLocalizations {
 
   @override
   String? get datePickerMinuteSemanticsLabelZero => null;
+
+  @override
+  String get datePickerMonthLabel => 'Month';
+
+  @override
+  String get datePickerYearLabel => 'Year';
 
   @override
   String get expandedHint => 'Kugoqiwe';

@@ -35,5 +35,12 @@
   "expansionTileExpandedTapHint": "Feche",
   "expansionTileCollapsedTapHint": "Abra para mostrar mais detalhes",
   "expandedHint": "Fechado.",
-  "collapsedHint": "Aberto."
+  "collapsedHint": "Aberto.",
+  "datePickerDateLabel": "Date",
+  "datePickerHourLabel": "Hour",
+  "datePickerMinuteLabel": "Minute",
+  "datePickerMeridiemLabel": "AM/PM",
+  "datePickerDayLabel": "Day",
+  "datePickerMonthLabel": "Month",
+  "datePickerYearLabel": "Year"
 }

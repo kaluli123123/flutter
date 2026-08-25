@@ -631,6 +631,18 @@ typedef _ColumnBuilder =
       Widget? selectionOverlay,
     );
 
+// Names a single [CupertinoDatePicker] column for assistive technologies.
+//
+// A [CupertinoPicker] exports itself as an unnamed adjustable semantics node,
+// which iOS VoiceOver and Voice Control describe as "Adjustable control" for
+// every column. The name has to end up on that adjustable node itself, hence
+// the [MergeSemantics] around the annotated picker.
+Widget _labeledColumn(String label, Widget child) {
+  return MergeSemantics(
+    child: Semantics(label: label, child: child),
+  );
+}
+
 class _CupertinoDatePickerDateTimeState extends State<CupertinoDatePicker> {
   // Fraction of the farthest column's vanishing point vs its width. Eyeballed
   // vs iOS.
@@ -849,7 +861,7 @@ class _CupertinoDatePickerDateTimeState extends State<CupertinoDatePicker> {
     TransitionBuilder itemPositioningBuilder,
     Widget? selectionOverlay,
   ) {
-    return NotificationListener<ScrollNotification>(
+    final Widget picker = NotificationListener<ScrollNotification>(
       onNotification: (ScrollNotification notification) {
         if (notification is ScrollStartNotification) {
           isDatePickerScrolling = true;
@@ -909,6 +921,7 @@ class _CupertinoDatePickerDateTimeState extends State<CupertinoDatePicker> {
         selectionOverlay: selectionOverlay,
       ),
     );
+    return _labeledColumn(localizations.datePickerDateLabel, picker);
   }
 
   // With the meridiem picker set to `meridiemIndex`, and the hour picker set to
@@ -934,7 +947,7 @@ class _CupertinoDatePickerDateTimeState extends State<CupertinoDatePicker> {
     TransitionBuilder itemPositioningBuilder,
     Widget? selectionOverlay,
   ) {
-    return NotificationListener<ScrollNotification>(
+    final Widget picker = NotificationListener<ScrollNotification>(
       onNotification: (ScrollNotification notification) {
         if (notification is ScrollStartNotification) {
           isHourPickerScrolling = true;
@@ -999,6 +1012,7 @@ class _CupertinoDatePickerDateTimeState extends State<CupertinoDatePicker> {
         }),
       ),
     );
+    return _labeledColumn(localizations.datePickerHourLabel, picker);
   }
 
   Widget _buildMinutePicker(
@@ -1006,7 +1020,7 @@ class _CupertinoDatePickerDateTimeState extends State<CupertinoDatePicker> {
     TransitionBuilder itemPositioningBuilder,
     Widget? selectionOverlay,
   ) {
-    return NotificationListener<ScrollNotification>(
+    final Widget picker = NotificationListener<ScrollNotification>(
       onNotification: (ScrollNotification notification) {
         if (notification is ScrollStartNotification) {
           isMinutePickerScrolling = true;
@@ -1056,6 +1070,7 @@ class _CupertinoDatePickerDateTimeState extends State<CupertinoDatePicker> {
         }),
       ),
     );
+    return _labeledColumn(localizations.datePickerMinuteLabel, picker);
   }
 
   Widget _buildAmPmPicker(
@@ -1063,7 +1078,7 @@ class _CupertinoDatePickerDateTimeState extends State<CupertinoDatePicker> {
     TransitionBuilder itemPositioningBuilder,
     Widget? selectionOverlay,
   ) {
-    return NotificationListener<ScrollNotification>(
+    final Widget picker = NotificationListener<ScrollNotification>(
       onNotification: (ScrollNotification notification) {
         if (notification is ScrollStartNotification) {
           isMeridiemPickerScrolling = true;
@@ -1104,6 +1119,7 @@ class _CupertinoDatePickerDateTimeState extends State<CupertinoDatePicker> {
         }),
       ),
     );
+    return _labeledColumn(localizations.datePickerMeridiemLabel, picker);
   }
 
   // Builds the time separator column.
@@ -1438,7 +1454,7 @@ class _CupertinoDatePickerDateState extends State<CupertinoDatePicker> {
     Widget? selectionOverlay,
   ) {
     final int daysInCurrentMonth = _lastDayInMonth(selectedYear, selectedMonth).day;
-    return NotificationListener<ScrollNotification>(
+    final Widget picker = NotificationListener<ScrollNotification>(
       onNotification: (ScrollNotification notification) {
         if (notification is ScrollStartNotification) {
           isDayPickerScrolling = true;
@@ -1490,6 +1506,7 @@ class _CupertinoDatePickerDateState extends State<CupertinoDatePicker> {
         }),
       ),
     );
+    return _labeledColumn(localizations.datePickerDayLabel, picker);
   }
 
   Widget _buildMonthPicker(
@@ -1497,7 +1514,7 @@ class _CupertinoDatePickerDateState extends State<CupertinoDatePicker> {
     TransitionBuilder itemPositioningBuilder,
     Widget? selectionOverlay,
   ) {
-    return NotificationListener<ScrollNotification>(
+    final Widget picker = NotificationListener<ScrollNotification>(
       onNotification: (ScrollNotification notification) {
         if (notification is ScrollStartNotification) {
           isMonthPickerScrolling = true;
@@ -1542,6 +1559,7 @@ class _CupertinoDatePickerDateState extends State<CupertinoDatePicker> {
         }),
       ),
     );
+    return _labeledColumn(localizations.datePickerMonthLabel, picker);
   }
 
   Widget _buildYearPicker(
@@ -1549,7 +1567,7 @@ class _CupertinoDatePickerDateState extends State<CupertinoDatePicker> {
     TransitionBuilder itemPositioningBuilder,
     Widget? selectionOverlay,
   ) {
-    return NotificationListener<ScrollNotification>(
+    final Widget picker = NotificationListener<ScrollNotification>(
       onNotification: (ScrollNotification notification) {
         if (notification is ScrollStartNotification) {
           isYearPickerScrolling = true;
@@ -1600,6 +1618,7 @@ class _CupertinoDatePickerDateState extends State<CupertinoDatePicker> {
         selectionOverlay: selectionOverlay,
       ),
     );
+    return _labeledColumn(localizations.datePickerYearLabel, picker);
   }
 
   bool get _isCurrentDateValid {
@@ -1865,7 +1884,7 @@ class _CupertinoDatePickerMonthYearState extends State<CupertinoDatePicker> {
     TransitionBuilder itemPositioningBuilder,
     Widget? selectionOverlay,
   ) {
-    return NotificationListener<ScrollNotification>(
+    final Widget picker = NotificationListener<ScrollNotification>(
       onNotification: (ScrollNotification notification) {
         if (notification is ScrollStartNotification) {
           isMonthPickerScrolling = true;
@@ -1910,6 +1929,7 @@ class _CupertinoDatePickerMonthYearState extends State<CupertinoDatePicker> {
         }),
       ),
     );
+    return _labeledColumn(localizations.datePickerMonthLabel, picker);
   }
 
   Widget _buildYearPicker(
@@ -1917,7 +1937,7 @@ class _CupertinoDatePickerMonthYearState extends State<CupertinoDatePicker> {
     TransitionBuilder itemPositioningBuilder,
     Widget? selectionOverlay,
   ) {
-    return NotificationListener<ScrollNotification>(
+    final Widget picker = NotificationListener<ScrollNotification>(
       onNotification: (ScrollNotification notification) {
         if (notification is ScrollStartNotification) {
           isYearPickerScrolling = true;
@@ -1967,6 +1987,7 @@ class _CupertinoDatePickerMonthYearState extends State<CupertinoDatePicker> {
         selectionOverlay: selectionOverlay,
       ),
     );
+    return _labeledColumn(localizations.datePickerYearLabel, picker);
   }
 
   bool get _isCurrentDateValid {
