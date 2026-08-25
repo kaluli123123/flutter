@@ -460,13 +460,22 @@ class CupertinoPageTransition extends StatefulWidget {
     bool allowSnapshotting,
     Widget? child,
   ) {
-    final animation = CurvedAnimation(
-      parent: secondaryAnimation,
-      curve: Curves.linearToEaseOut,
-      reverseCurve: Curves.easeInToLinear,
-    );
-    final Animation<Offset> delegatedPositionAnimation = animation.drive(_kMiddleLeftTween);
-    animation.dispose();
+    // In the middle of a back gesture drag, the transition must be linear to
+    // match the finger motions, just like the transition of the route that
+    // provided this delegated transition. See [linearTransition].
+    final bool linearTransition = ModalRoute.of(context)?.popGestureInProgress ?? false;
+    final Animation<Offset> delegatedPositionAnimation;
+    if (linearTransition) {
+      delegatedPositionAnimation = secondaryAnimation.drive(_kMiddleLeftTween);
+    } else {
+      final curvedAnimation = CurvedAnimation(
+        parent: secondaryAnimation,
+        curve: Curves.linearToEaseOut,
+        reverseCurve: Curves.easeInToLinear,
+      );
+      delegatedPositionAnimation = curvedAnimation.drive(_kMiddleLeftTween);
+      curvedAnimation.dispose();
+    }
 
     assert(debugCheckHasDirectionality(context));
     final TextDirection textDirection = Directionality.of(context);

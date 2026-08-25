@@ -1309,6 +1309,79 @@ void main() {
     expect(tester.getTopLeft(find.text('2')).dx, moreOrLessEquals(300));
   });
 
+  // Regression test for https://github.com/flutter/flutter/issues/109533.
+  testWidgets('Dragged pop gesture is linear for a previous route with a delegated transition', (
+    WidgetTester tester,
+  ) async {
+    await tester.pumpWidget(const CupertinoApp(home: Text('1')));
+
+    // A route with a custom transition. It has no parallax of its own, so it
+    // uses the delegated transition of the CupertinoPageRoute above it.
+    final route2 = PageRouteBuilder<void>(
+      pageBuilder:
+          (
+            BuildContext context,
+            Animation<double> animation,
+            Animation<double> secondaryAnimation,
+          ) {
+            return const CupertinoPageScaffold(child: Text('2'));
+          },
+      transitionsBuilder:
+          (
+            BuildContext context,
+            Animation<double> animation,
+            Animation<double> secondaryAnimation,
+            Widget child,
+          ) {
+            return FadeTransition(opacity: animation, child: child);
+          },
+    );
+
+    final route3 = CupertinoPageRoute<void>(
+      builder: (BuildContext context) {
+        return const CupertinoPageScaffold(child: Text('3'));
+      },
+    );
+
+    final NavigatorState navigator = tester.state<NavigatorState>(find.byType(Navigator));
+    navigator.push(route2);
+    await tester.pumpAndSettle();
+    navigator.push(route3);
+    await tester.pumpAndSettle();
+
+    expect(find.text('2'), findsNothing);
+    expect(tester.getTopLeft(find.text('3')).dx, moreOrLessEquals(0));
+
+    final TestGesture swipeGesture = await tester.startGesture(const Offset(5, 100));
+
+    await swipeGesture.moveBy(const Offset(100, 0));
+    await tester.pump();
+    expect(tester.getTopLeft(find.text('2')).dx, moreOrLessEquals(-233, epsilon: 1));
+    expect(tester.getTopLeft(find.text('3')).dx, moreOrLessEquals(100));
+    expect(navigator.userGestureInProgress, true);
+
+    await swipeGesture.moveBy(const Offset(100, 0));
+    await tester.pump();
+    expect(tester.getTopLeft(find.text('2')).dx, moreOrLessEquals(-200));
+    expect(tester.getTopLeft(find.text('3')).dx, moreOrLessEquals(200));
+
+    // Moving by the same distance each time produces linear movements on both
+    // routes.
+    await swipeGesture.moveBy(const Offset(100, 0));
+    await tester.pump();
+    expect(tester.getTopLeft(find.text('2')).dx, moreOrLessEquals(-166, epsilon: 1));
+    expect(tester.getTopLeft(find.text('3')).dx, moreOrLessEquals(300));
+
+    // Releasing the drag past the middle of the screen pops the route above and
+    // the previous route settles back into place.
+    await swipeGesture.moveBy(const Offset(200, 0));
+    await tester.pump();
+    await swipeGesture.up();
+    await tester.pumpAndSettle();
+    expect(tester.getTopLeft(find.text('2')).dx, moreOrLessEquals(0));
+    expect(find.text('3'), findsNothing);
+  });
+
   // Regression test for https://github.com/flutter/flutter/issues/137033.
   testWidgets('Update pages during a drag gesture will not stuck', (WidgetTester tester) async {
     await tester.pumpWidget(const _TestPageUpdate());
