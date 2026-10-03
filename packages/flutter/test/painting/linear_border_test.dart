@@ -20,6 +20,62 @@ final List<Offset> topRectIncludes = rectIncludes(const Rect.fromLTWH(0, 0, 100,
 final List<Offset> bottomRectIncludes = rectIncludes(const Rect.fromLTWH(0, 96, 100, 4));
 
 void main() {
+  test('LinearBorder scaling preserves its edges', () {
+    const border = LinearBorder(
+      side: borderSide,
+      start: LinearBorderEdge(size: 0.5, alignment: -1.0),
+      end: LinearBorderEdge(size: 0.25, alignment: 1.0),
+      top: LinearBorderEdge(),
+      bottom: LinearBorderEdge(size: 0.75),
+    );
+    expect(border.scale(1.0), border);
+    final LinearBorder scaled = border.copyWith(side: borderSide.scale(0.5));
+    expect(border.scale(0.5), scaled);
+    expect(ShapeBorder.lerp(null, border, 0.5), scaled);
+    expect(ShapeBorder.lerp(border, null, 0.5), scaled);
+  });
+
+  for (final TextDirection direction in TextDirection.values) {
+    test('LinearBorder paints translated edges in $direction', () {
+      const border = LinearBorder(
+        side: borderSide,
+        start: LinearBorderEdge(),
+        end: LinearBorderEdge(),
+        top: LinearBorderEdge(),
+        bottom: LinearBorderEdge(),
+      );
+      final canvas = _PathRecordingCanvas();
+      border.paint(canvas, const Rect.fromLTWH(30.0, 40.0, 100.0, 100.0), textDirection: direction);
+      final startX = direction == TextDirection.ltr ? 30.0 : 126.0;
+      final endX = direction == TextDirection.ltr ? 126.0 : 30.0;
+      expect(canvas.paths.map((Path path) => path.getBounds()), <Rect>[
+        Rect.fromLTWH(startX, 44.0, 4.0, 92.0),
+        Rect.fromLTWH(endX, 44.0, 4.0, 92.0),
+        const Rect.fromLTWH(30.0, 40.0, 100.0, 4.0),
+        const Rect.fromLTWH(30.0, 136.0, 100.0, 4.0),
+      ]);
+
+      final LinearBorder partialBorder = border.copyWith(
+        start: const LinearBorderEdge(size: 0.5, alignment: 1.0),
+        end: const LinearBorderEdge(size: 0.5, alignment: -1.0),
+        top: const LinearBorderEdge(size: 0.5, alignment: 1.0),
+        bottom: const LinearBorderEdge(size: 0.5, alignment: -1.0),
+      );
+      final partialCanvas = _PathRecordingCanvas();
+      partialBorder.paint(
+        partialCanvas,
+        const Rect.fromLTWH(30.0, 40.0, 100.0, 100.0),
+        textDirection: direction,
+      );
+      expect(partialCanvas.paths.map((Path path) => path.getBounds()), <Rect>[
+        Rect.fromLTWH(startX, 90.0, 4.0, 46.0),
+        Rect.fromLTWH(endX, 44.0, 4.0, 46.0),
+        Rect.fromLTWH(direction == TextDirection.ltr ? 80.0 : 30.0, 40.0, 50.0, 4.0),
+        Rect.fromLTWH(direction == TextDirection.ltr ? 30.0 : 80.0, 136.0, 50.0, 4.0),
+      ]);
+    });
+  }
+
   test('LinearBorderEdge defaults', () {
     expect(const LinearBorderEdge().size, 1);
     expect(const LinearBorderEdge().alignment, 0);
@@ -159,4 +215,13 @@ void main() {
         ..path(includes: bottomRectIncludes, excludes: topRectIncludes, color: borderSide.color),
     );
   });
+}
+
+class _PathRecordingCanvas extends TestRecordingCanvas {
+  final List<Path> paths = <Path>[];
+
+  @override
+  void drawPath(Path path, Paint paint) {
+    paths.add(Path.from(path));
+  }
 }
